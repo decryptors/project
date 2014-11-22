@@ -3,3 +3,7 @@ D:\proiectColectiv\CemeteryManagement\Model\bin\Debug\Model.pdb
 D:\proiectColectiv\CemeteryManagement\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\proiectColectiv\CemeteryManagement\Model\obj\Debug\Model.dll
 D:\proiectColectiv\CemeteryManagement\Model\obj\Debug\Model.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\Model\bin\Debug\Model.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\Model\bin\Debug\Model.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\Model\obj\Debug\Model.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\Model\obj\Debug\Model.pdb

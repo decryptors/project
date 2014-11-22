@@ -5,3 +5,10 @@ D:\proiectColectiv\CemeteryManagement\Repository\bin\Debug\Model.pdb
 D:\proiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
 D:\proiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.dll
 D:\proiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\bin\Debug\Repository.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\bin\Debug\Repository.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\bin\Debug\Model.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\bin\Debug\Model.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\Repository\obj\Debug\Repository.pdb

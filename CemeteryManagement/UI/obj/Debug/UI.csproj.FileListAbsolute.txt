@@ -7,3 +7,12 @@ D:\proiectColectiv\CemeteryManagement\UI\bin\Model.pdb
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
