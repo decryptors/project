@@ -1,0 +1,9 @@
+D:\proiectColectiv\CemeteryManagement\UI\bin\UI.dll
+D:\proiectColectiv\CemeteryManagement\UI\bin\UI.pdb
+D:\proiectColectiv\CemeteryManagement\UI\bin\Controller.dll
+D:\proiectColectiv\CemeteryManagement\UI\bin\Model.dll
+D:\proiectColectiv\CemeteryManagement\UI\bin\Controller.pdb
+D:\proiectColectiv\CemeteryManagement\UI\bin\Model.pdb
+D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
+D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb

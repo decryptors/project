@@ -1,0 +1,9 @@
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Controller.dll
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Controller.pdb
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Model.dll
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Repository.dll
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Model.pdb
+D:\proiectColectiv\CemeteryManagement\Controller\bin\Debug\Repository.pdb
+D:\proiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+D:\proiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.dll
+D:\proiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.pdb
