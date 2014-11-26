@@ -16,3 +16,5 @@ F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb

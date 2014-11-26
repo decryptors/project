@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Deceased
+    public class Deceased:Person
     {
         public string Religion { get; set; }
         public DateTime DateOfBurial { get; set; }
