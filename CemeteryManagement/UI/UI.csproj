@@ -59,9 +59,12 @@
   <ItemGroup>
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.min.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
+    <Content Include="Scripts\main-scripts.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\script-menu.js" />
     <Content Include="Styles\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />

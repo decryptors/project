@@ -21,7 +21,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Managementul cimitirelor v1.0</a>
+                    <a class="navbar-brand" href="#">Managementul cimitirelor</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -33,32 +33,58 @@
         </nav>
         <div class="container-fluid"> 
             <div class="row">
-                <div class="col-sm-4 col-md-3 sidebar">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <div id="toggle-menu">
                      <ul class="nav nav-sidebar">
-                        <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="true">
-                                    Registrii <span class="caret"></span>
+                        <li role="presentation" class="has-sub">
+                            <a class="registrii-toggle" href="#" role="button">
+                                    Registrii 
                             </a>
-                            <ul class="dropdown-menu" role="menu">
+                            <ul class="nav hide-menu" role="menu">
                                 <li class="active"><a href="#">Anual de programare a înmormântărilor</a></li>
-                                <li class="divider"></li>
+                                
                                 <li><a href="#">De morminte</a></li>
-                                <li class="divider"></li>
+                            
                                 <li><a href="#">De morminte-monumente funerare</a></li>
-                                <li class="divider"></li>
+                                
                                 <li><a href="#">Index anual al decedatilor</a></li>
-                                <li class="divider"></li>
+                                
                                 <li><a href="#">Anual de evidenta a decedatilor fara apartinatori</a></li>
-                                <li class="divider"></li>
+                             
                                 <li><a href="#">Cu evidenta cererilor de atribuire a locurilor de inhumare</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Anual de evidenta a contractelor de concesiune</a></li>
+                               
+                                <li class="last"><a href="#">Anual de evidenta a contractelor de concesiune</a></li>
                 
                             </ul>
                         </li>
+                         <li role="presentation" class="has-sub">
+                            <a class="registrii-toggle" href="#" role="button">
+                                    Manage 
+                            </a>
+                            <ul class="nav hide-menu" role="menu">
+                                <li class="active"><a href="#">Area</a></li>
+                                
+                                <li><a href="#">Building</a></li>
+                            
+                                <li><a href="#">Contract</a></li>
+                                
+                                <li><a href="#">Deceased</a></li>
+                                
+                                <li><a href="#">Graveyard</a></li>
+            
+                                <li><a href="#">Homeless</a></li>
+
+                                <li><a href="#">Owner</a></li>
+
+                                <li class="last"><a href="#">Person</a></li>
+                               
+                               
+                            </ul>
+                        </li>
                     </ul>
+                    </div>
                 </div>       
-                <div class="col-sm-8 col-sm-offset-4 col-md-19 col-md-offset-3 main">
+                <div class="col-sm-7 col-sm-offset-3 col-md-20 col-md-offset-4 main">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
                     </asp:ContentPlaceHolder>
@@ -69,6 +95,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="Scripts/bootstrap.min.js"></script>
         <script src="Scripts/docs.min.js"></script>
+        <script src="Scripts/main-scripts.js"></script>
+        <script src="Scripts/script-menu.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="Scripts/ie10-viewport-bug-workaround.js"></script>
     </form>
