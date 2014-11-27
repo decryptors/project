@@ -20,6 +20,7 @@ namespace Repository
 
             return new Deceased
             {
+                PersonId = reader.GetInt32(reader.GetOrdinal("PersonId")),
                 Name = reader.GetString(reader.GetOrdinal("Name")),
                 Religion = reader.GetString(reader.GetOrdinal("Religion")),
                 DateOfBurial = reader.GetDateTime(reader.GetOrdinal("DateOfBurial")),

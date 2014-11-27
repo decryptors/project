@@ -10,7 +10,7 @@ namespace Controller
 {
     public class DeceasedController
     {
-        public DeceasedRepository DeceasedRepository { get; set; }
+        private DeceasedRepository DeceasedRepository { get; set; }
         public DeceasedController()
         {
             DeceasedRepository = new DeceasedRepository();
