@@ -10,7 +10,7 @@ namespace Repository
 {
     public class DBManager
     {
-        private const string CONNECTION_STRING = "Server=VLAD\\VLAD;Database=CemeteryManagementDB;Trusted_Connection=True;";
+        private const string CONNECTION_STRING = "Data Source=decryptors.appcluj.ro;Initial Catalog=CemeteryManagementDB;Integrated Security=False;User ID=user;Password=decryptorssql;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
         /// <summary>
         /// This method is used to execute the neccessary read commands.
         /// </summary>
@@ -38,6 +38,39 @@ namespace Repository
                 }
             }
             return readResult;
+        }
+
+        #region Methods
+        /// <summary>
+        /// Executes the insert, update and delete operation.
+        /// </summary>
+        /// <param name="commandText">Represents the name of the stored procedure.</param>
+        /// <param name="commandParameters">Represents all the neccessary parameters for the stored procedure.</param>
+        public static void ExecuteCommand(string commandText, params SqlParameter[] commandParameters)
+        {
+            using (SqlConnection connection = new SqlConnection(CONNECTION_STRING))
+            {
+                connection.Open();
+                using (SqlTransaction sqlTransaction = connection.BeginTransaction())
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand(commandText, connection, sqlTransaction))
+                    {
+                        try
+                        {
+                            sqlCommand.CommandType = CommandType.StoredProcedure;
+                            sqlCommand.Parameters.AddRange(commandParameters);
+                            sqlCommand.ExecuteNonQuery();
+                            sqlTransaction.Commit();
+                        }
+                        catch (SqlException)
+                        {
+                            sqlTransaction.Rollback();
+                            throw;
+                        }
+                    }
+                }
+            }
+
         }
 
 
