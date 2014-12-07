@@ -57,12 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AreaForm.aspx" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\AddArea.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.min.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.tmpl.min.js" />
     <Content Include="Scripts\main-scripts.js" />
     <Content Include="Scripts\npm.js" />
@@ -77,6 +80,13 @@
     <Content Include="Webservices\DeceasedService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaForm.aspx.cs">
+      <DependentUpon>AreaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AreaForm.aspx.designer.cs">
+      <DependentUpon>AreaForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cemetery-template.Master.cs">
       <DependentUpon>cemetery-template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

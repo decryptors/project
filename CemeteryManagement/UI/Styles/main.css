@@ -68,10 +68,6 @@ body {
 
 /*toggle  sub-menu*/
 
-.dropdown-menu > li > a {
-    white-space: normal !important;
-}
-
 .toggle-menu {
    list-style:none;
    position:relative;
