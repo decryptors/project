@@ -8,6 +8,8 @@ namespace Repository
     {
         private const string READ_ALL_DECEASED = "Persons_ReadAllDeceased";
         private const string ADD_DECEASED = "AddDeceased";
+        private const string DELETE_DECEASED = "DeleteDeceased";
+        private const string UPDATE_DECEASED = "UpdateDeceased";
         public DeceasedRepository()
         {
            
@@ -27,6 +29,24 @@ namespace Repository
             };
 
             DBManager.ExecuteCommand(ADD_DECEASED, deceasedParam);
+        }
+
+        public void DeleteDeceased(Deceased deceased) {
+            SqlParameter[] deceasedParam = {
+                new SqlParameter("@PersonID", SqlDbType.Int) { Value = deceased.PersonId }
+            };
+            DBManager.ExecuteCommand(DELETE_DECEASED, deceasedParam);
+        }
+
+        public void UpdateDeceased(Deceased deceased) {
+            SqlParameter[] deceasedParam = {
+                new SqlParameter("@Name", SqlDbType.NVarChar, -1) { Value = deceased.Name },
+                new SqlParameter("@Religion", SqlDbType.NVarChar, -1) { Value = deceased.Religion },
+                new SqlParameter("@DateOfBurial", SqlDbType.Date) { Value = deceased.DateOfBurial },
+                new SqlParameter("@isVip", SqlDbType.Bit) { Value = deceased.IsVIP },
+                new SqlParameter("@BurialCertificateNumber", SqlDbType.NVarChar, -1) { Value = deceased.BurialCertificateNumber }
+            };
+            DBManager.ExecuteCommand(UPDATE_DECEASED, deceasedParam);
         }
 
         protected  Deceased ReaderToModel(SqlDataReader reader)
