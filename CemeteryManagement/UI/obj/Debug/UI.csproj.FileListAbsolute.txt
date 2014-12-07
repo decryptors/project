@@ -18,5 +18,5 @@ F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
-D:\proiectColectiv\CemeteryManagement\UI\bin\Repository.dll
-D:\proiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml

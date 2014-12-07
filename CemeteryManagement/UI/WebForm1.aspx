@@ -48,6 +48,21 @@
                 string+=(deceased[i]["Name"] + ",");
             }
             alert(string);
+            var obj = JSON.stringify({deceased:deceased[0]});
+            $.ajax({
+                type: "POST",
+                url: "/Webservices/DeceasedService.asmx/AddDeceased",
+                data: obj,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    alert(data.d);
+                },
+                failure: function (err, msg) {
+                    alert(err + msg);
+                }
+
+            });
             //To Do Repair template usage
             //$.tmpl('deceasedTemplate',deceased).appendTo('#deceasedContainer');
         }

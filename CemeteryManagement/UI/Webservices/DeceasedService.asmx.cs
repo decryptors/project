@@ -1,10 +1,12 @@
 ﻿using Controller;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Services;
+using Newtonsoft.Json;
 
 namespace UI.Webservices
 {
@@ -23,7 +25,20 @@ namespace UI.Webservices
         [WebMethod]
         public string ReadAll()
         {
-            return _serializer.Serialize(_deceasedController.ReadAll());
+            return JsonConvert.SerializeObject(_deceasedController.ReadAll(), Formatting.None, new JsonSerializerSettings());
+        }
+
+        [WebMethod]
+        public string AddDeceased(Deceased deceased)
+        {
+            try
+            {
+                _deceasedController.AddDeceased(deceased);
+                return "true";
+            }
+            catch (Exception exception) {
+                return exception.Message;
+            }
         }
     }
 }

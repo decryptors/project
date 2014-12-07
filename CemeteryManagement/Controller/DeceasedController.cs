@@ -19,5 +19,8 @@ namespace Controller
         public List<Deceased> ReadAll() {
             return DeceasedRepository.ReadAll();
         }
+        public void AddDeceased(Deceased deceased){
+            DeceasedRepository.AddDeceased(deceased);
+        }
     }
 }
