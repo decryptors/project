@@ -19,11 +19,11 @@ namespace Repository
 
         public void AddDeceased(Deceased deceased) {
             SqlParameter[] deceasedParam = {
-                new SqlParameter("@Name", SqlDbType.UniqueIdentifier) { Value = deceased.Name },
+                new SqlParameter("@Name", SqlDbType.NVarChar, -1) { Value = deceased.Name },
                 new SqlParameter("@Religion", SqlDbType.NVarChar, -1) { Value = deceased.Religion },
-                new SqlParameter("@DateOfBurial", SqlDbType.NVarChar, -1) { Value = deceased.DateOfBurial },
-                new SqlParameter("@isVip", SqlDbType.SmallInt) { Value = deceased.IsVIP },
-                new SqlParameter("@BurialCertificateNumber", SqlDbType.SmallInt) { Value = deceased.BurialCertificateNumber }
+                new SqlParameter("@DateOfBurial", SqlDbType.Date) { Value = deceased.DateOfBurial },
+                new SqlParameter("@isVip", SqlDbType.Bit) { Value = deceased.IsVIP },
+                new SqlParameter("@BurialCertificateNumber", SqlDbType.NVarChar, -1) { Value = deceased.BurialCertificateNumber }
             };
 
             DBManager.ExecuteCommand(ADD_DECEASED, deceasedParam);
