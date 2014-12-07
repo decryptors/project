@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AreaForm.aspx.cs" MasterPageFile="~/cemetery-template.Master" Inherits="UI.AreaForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AreaForm.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <button id="btnPopup">Add</button> 
-    <div id="dialog" style="display: none">
+    <div id="dialog">
         This is a simple popup
     </div>
     <div id="modal_dialog" style="display: none">

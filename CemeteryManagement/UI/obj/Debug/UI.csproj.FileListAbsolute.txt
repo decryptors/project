@@ -20,3 +20,16 @@ F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.dll.config
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Controller.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Model.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Repository.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Controller.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Model.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\Repository.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.pdb
