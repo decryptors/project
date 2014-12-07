@@ -16,3 +16,12 @@ F:\anul3\ProiectColectiv\CemeteryManagement\Controller\bin\Debug\Repository.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 F:\anul3\ProiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Controller.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Controller.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Model.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Repository.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Model.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\bin\Debug\Repository.pdb
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.dll
+\\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.pdb
