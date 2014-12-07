@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 namespace Repository
 {
     public class DeceasedRepository
@@ -10,6 +11,7 @@ namespace Repository
         private const string ADD_DECEASED = "AddDeceased";
         private const string DELETE_DECEASED = "DeleteDeceased";
         private const string UPDATE_DECEASED = "UpdateDeceased";
+        private const string READ_BY_PERSONID = "ReadByIDDeceased";
         public DeceasedRepository()
         {
            
@@ -17,6 +19,13 @@ namespace Repository
         public List<Deceased> ReadAll()
         {
             return DBManager.ExecuteReadCommand<Deceased>(READ_ALL_DECEASED, ReaderToModel);
+        }
+
+        public Deceased ReadByID(int id) {
+            SqlParameter[] deceasedParam = {
+                new SqlParameter("@PersonID", SqlDbType.Int) { Value = id }
+            };
+            return DBManager.ExecuteReadCommand<Deceased>(READ_BY_PERSONID, ReaderToModel, deceasedParam).FirstOrDefault();
         }
 
         public void AddDeceased(Deceased deceased) {
@@ -44,7 +53,8 @@ namespace Repository
                 new SqlParameter("@Religion", SqlDbType.NVarChar, -1) { Value = deceased.Religion },
                 new SqlParameter("@DateOfBurial", SqlDbType.Date) { Value = deceased.DateOfBurial },
                 new SqlParameter("@isVip", SqlDbType.Bit) { Value = deceased.IsVIP },
-                new SqlParameter("@BurialCertificateNumber", SqlDbType.NVarChar, -1) { Value = deceased.BurialCertificateNumber }
+                new SqlParameter("@BurialCertificateNumber", SqlDbType.NVarChar, -1) { Value = deceased.BurialCertificateNumber },
+                new SqlParameter("@PersonID", SqlDbType.Int) { Value = deceased.PersonId }
             };
             DBManager.ExecuteCommand(UPDATE_DECEASED, deceasedParam);
         }
