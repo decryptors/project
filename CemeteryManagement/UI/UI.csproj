@@ -63,7 +63,12 @@
   <ItemGroup>
     <Content Include="Forms\AreaForm.aspx" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Forms\BuildingForm.aspx" />
+    <Content Include="Forms\ContractForm.aspx" />
     <Content Include="Forms\DeceasedForm.aspx" />
+    <Content Include="Forms\GraveyardForm.aspx" />
+    <Content Include="Forms\HomelessForm.aspx" />
+    <Content Include="Forms\OwnerForm.aspx" />
     <Content Include="Scripts\AddArea.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -80,6 +85,7 @@
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\main.css" />
+    <Content Include="Styles\PopupsStyle.css" />
     <Content Include="Web.config" />
     <Content Include="Forms\WebForm1.aspx" />
     <Content Include="Webservices\DeceasedService.asmx" />
@@ -92,6 +98,13 @@
     <Compile Include="Forms\AreaForm.aspx.designer.cs">
       <DependentUpon>AreaForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BuildingForm.aspx.cs">
+      <DependentUpon>BuildingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\BuildingForm.aspx.designer.cs">
+      <DependentUpon>BuildingForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\cemetery-template.Master.cs">
       <DependentUpon>cemetery-template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,12 +112,40 @@
     <Compile Include="Forms\cemetery-template.Master.designer.cs">
       <DependentUpon>cemetery-template.Master</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ContractForm.aspx.cs">
+      <DependentUpon>ContractForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractForm.aspx.designer.cs">
+      <DependentUpon>ContractForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DeceasedForm.aspx.cs">
       <DependentUpon>DeceasedForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Forms\DeceasedForm.aspx.designer.cs">
       <DependentUpon>DeceasedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GraveyardForm.aspx.cs">
+      <DependentUpon>GraveyardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GraveyardForm.aspx.designer.cs">
+      <DependentUpon>GraveyardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomelessForm.aspx.cs">
+      <DependentUpon>HomelessForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\HomelessForm.aspx.designer.cs">
+      <DependentUpon>HomelessForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OwnerForm.aspx.cs">
+      <DependentUpon>OwnerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\OwnerForm.aspx.designer.cs">
+      <DependentUpon>OwnerForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\WebForm1.aspx.cs">

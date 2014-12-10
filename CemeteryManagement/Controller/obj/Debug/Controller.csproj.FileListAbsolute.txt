@@ -25,3 +25,12 @@ F:\anul3\ProiectColectiv\CemeteryManagement\Controller\obj\Debug\Controller.pdb
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.dll
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\Controller\obj\Debug\Controller.pdb
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Controller.dll
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Controller.pdb
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Model.dll
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Repository.dll
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Model.pdb
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\bin\Debug\Repository.pdb
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\obj\Debug\Controller.dll
+E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\Controller\obj\Debug\Controller.pdb
