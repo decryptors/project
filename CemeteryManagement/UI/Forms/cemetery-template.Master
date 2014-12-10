@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="cemetery-template.master.cs" Inherits="UI.cemetery_template" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="cemetery-template.Master.cs" Inherits="UI.cemetery_template" %>
 
 <!DOCTYPE html>
 

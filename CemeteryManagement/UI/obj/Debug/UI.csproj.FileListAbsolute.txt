@@ -33,6 +33,19 @@ F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.dll
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\obj\Debug\UI.pdb
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\UI.dll.config
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\UI.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\UI.pdb
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Controller.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Model.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Repository.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Controller.pdb
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Model.pdb
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\bin\Repository.pdb
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\obj\Debug\UI.dll
+E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\UI\obj\Debug\UI.pdb
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\bin\UI.dll.config
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\bin\UI.dll
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\bin\UI.pdb
