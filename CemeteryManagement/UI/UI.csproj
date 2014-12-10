@@ -69,6 +69,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.min.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
+    <Content Include="Scripts\AddDeceased.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.tmpl.min.js" />

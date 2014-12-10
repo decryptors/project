@@ -3,7 +3,7 @@
         event.stopPropagation();
         event.preventDefault();
         $("#dialog").dialog({
-            title: "Adăugare",
+            title: "Adăugare decedat",
             buttons: {
                 Close: function () {
                     $(this).dialog('close');
@@ -14,6 +14,6 @@
             resizable: false
         });
         $("#dialog").dialog('open');
-       // return false;
+        // return false;
     });
 });
