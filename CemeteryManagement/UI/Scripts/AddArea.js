@@ -1,19 +1,84 @@
 ﻿$(document).ready(function () {
-    $("#btnPopup").click(function (event) {
+    $("#btnPopupAdd").click(function (event) {
         event.stopPropagation();
         event.preventDefault();
-        $("#dialog").dialog({
-            title: "jQuery Dialog Popup",
+        $("#addDiv").dialog({
+            title: document.getElementById("titleAddPopup").innerHTML,
             buttons: {
-                Close: function () {
+                OK: function () {
+                },
+                Renunta: function () {
                     $(this).dialog('close');
                 }
             },
-            modal: true,
+            //modal: true,
             draggable: false,
             resizable: false
         });
         $("#dialog").dialog('open');
-       // return false;
+    });
+
+    $("#btnPopupEdit").click(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        $("#editDiv").dialog({
+            title: document.getElementById("titleEditPopup").innerHTML,
+            buttons: {
+                OK: function () {
+                },
+                Renunta: function () {
+                    $(this).dialog('close');
+                }
+            },
+            //modal: true,
+            draggable: false,
+            resizable: false
+        });
+        $("#dialog").dialog('open');
+    });
+
+    $("#cautaContract").click(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        $("#showContract").dialog({
+            title: 'Cauta contract',
+            buttons: {
+                Selecteaza: function () {
+                }
+            },
+            //modal: true,
+            draggable: false,
+            resizable: false,
+            position: { my: "right top", at: "right bottom", of: window }
+        });
+        $("#dialog").dialog('open');
+    });
+
+    $("#cautaProprietar").click(function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        $("#showOwner").dialog({
+            title: 'Cauta proprietar',
+            buttons: {
+                Selecteaza: function () {
+                }
+            },
+            //modal: true,
+            draggable: false,
+            resizable: false,
+            position: { my: "right top", at: "right bottom", of: window }
+        });
+        $("#dialog").dialog('open');
     });
 });
+
+function onBlur(el) {
+    if (el.value == '') {
+        el.value = el.defaultValue;
+    }
+}
+function onFocus(el) {
+    if (el.value == el.defaultValue) {
+        el.value = '';
+    }
+}
