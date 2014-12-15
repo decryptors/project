@@ -8,6 +8,7 @@ namespace Model
 {
     public class Area
     {
+        public int AreaId { get; set; }
         public List<Deceased> Deceased { get; set; }
         public int Number { get; set; }
         public double Surface { get; set; }
