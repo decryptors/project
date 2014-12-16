@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeceasedController.cs" />
+    <Compile Include="HomelessController.cs" />
+    <Compile Include="OwnersController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

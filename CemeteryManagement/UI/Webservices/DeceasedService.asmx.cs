@@ -33,7 +33,7 @@ namespace UI.Webservices
         {
             try
             {
-                _deceasedController.AddDeceased(deceased);
+                _deceasedController.Add(deceased);
                 return "true";
             }
             catch (Exception exception) {
