@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class OwnersController
+    public class OwnersController
     {
          private OwnerRepository OwnerRepository { get; set; }
          public OwnersController()
