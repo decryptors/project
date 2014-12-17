@@ -34,7 +34,6 @@ namespace Repository
         public void AddBuilding(Building building,int areaId)
         {
             SqlParameter[] param = {
-                new SqlParameter("@Id", SqlDbType.Int) { Value = building.BuildingId },
                 new SqlParameter("@Type", SqlDbType.NVarChar, -1) { Value = building.Type },
                 new SqlParameter("@isHistorical", SqlDbType.Bit, -1) { Value = building.IsHistorical },
                 new SqlParameter("@areaId", SqlDbType.Int) { Value = areaId }
@@ -69,7 +68,7 @@ namespace Repository
 
             return new Building
             {
-                BuildingId = reader.GetInt32(reader.GetOrdinal("PersonId")),
+                BuildingId = reader.GetInt32(reader.GetOrdinal("BuildingId")),
                 Type = reader.GetString(reader.GetOrdinal("Type")),
                 IsHistorical = reader.GetBoolean(reader.GetOrdinal("isHistorical"))
             };
