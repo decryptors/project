@@ -90,6 +90,7 @@
     <Content Include="Web.config" />
     <Content Include="Forms\WebForm1.aspx" />
     <Content Include="Webservices\DeceasedService.asmx" />
+    <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\AreaForm.aspx.cs">
@@ -158,6 +159,10 @@
     </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\OwnersService.asmx.cs">
+      <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
