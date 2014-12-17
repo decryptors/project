@@ -96,7 +96,7 @@
         function AddDeceased() {
             var deceased = new Object();
             deceased.Name = $("#inputName").val();
-            deceased.Religion = $("#inputName").val();
+            deceased.Religion = $("#inputReligion").val();
             deceased.DateOfBurial = $("inputDateOfBurial").val();
             deceased.IsVIP = $("#checkIsVIP").prop('checked');
             deceased.BurialCertificateNumber = $("#inputBurialCertificateNumber").val();
@@ -118,5 +118,7 @@
             });
         }
     </script>
+
+    <script src="/Scripts/AddDeceased.js"></script>
 
 </asp:Content>
