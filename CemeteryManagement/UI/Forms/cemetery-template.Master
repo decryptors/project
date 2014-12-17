@@ -58,19 +58,19 @@
                                     Registrii 
                             </a>
                             <ul class="nav hide-menu" role="menu">
-                                <li class="active"><a href="#">Anual de programare a înmormântărilor</a></li>
+                                <li class="active"><a href="RegistrulAnualDeProgramareAInmormantarilor.aspx">Anual de programare a înmormântărilor</a></li>
                                 
-                                <li><a href="#">De morminte</a></li>
+                                <li><a href="RegistrulDeMorminte.aspx">De morminte</a></li>
                             
-                                <li><a href="#">De morminte-monumente funerare</a></li>
+                                <li><a href="RegistrulDeMorminteMonumenteFunerare.aspx">De morminte-monumente funerare</a></li>
                                 
-                                <li><a href="#">Index anual al decedatilor</a></li>
+                                <li><a href="RegistrulIndexAnualAlDecedatilor.aspx">Index anual al decedatilor</a></li>
                                 
-                                <li><a href="#">Anual de evidenta a decedatilor fara apartinatori</a></li>
+                                <li><a href="RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx">Anual de evidenta a decedatilor fara apartinatori</a></li>
                              
-                                <li><a href="#">Cu evidenta cererilor de atribuire a locurilor de inhumare</a></li>
+                                <li><a href="RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx">Cu evidenta cererilor de atribuire a locurilor de inhumare</a></li>
                                
-                                <li class="last"><a href="#">Anual de evidenta a contractelor de concesiune</a></li>
+                                <li class="last"><a href="RegistrulDeEvidentaAContractelorDeConcesiune.aspx">Anual de evidenta a contractelor de concesiune</a></li>
                 
                             </ul>
                         </li>
@@ -81,32 +81,32 @@
                             <ul class="nav hide-menu last" role="menu">
                                 <li class="active"><a href="AreaForm.aspx">Area</a></li>
                                 
-                                <li><a href="#">Building</a></li>
+                                <li><a href="BuildingForm.aspx">Building</a></li>
                             
-                                <li><a href="#">Contract</a></li>
+                                <li><a href="ContractForm.aspx">Contract</a></li>
                                 
-                                <li><a href="#">Deceased</a></li>
+                                <li><a href="DeceasedForm.aspx">Deceased</a></li>
                                 
-                                <li><a href="#">Graveyard</a></li>
+                                <li><a href="GraveyardForm.aspx">Graveyard</a></li>
             
-                                <li><a href="#">Homeless</a></li>
+                                <li><a href="HomelessForm.aspx">Homeless</a></li>
 
-                                <li><a href="#">Owner</a></li>
+                                <li><a href="OwnerForm.aspx">Owner</a></li>
 
-                                <li class="last"><a href="#">Person</a></li>
+                                <li class="last"><a href="PersonForm.aspx">Person</a></li>
                                
                                
                             </ul>
                         </li>
                     </ul>
                     </div>
-                </div>       
-                <div class="col-sm-9 col-sm-offset2 col-md-10 col-md-offset-2 main">
+                </div>  
+                <div class="col-sm-9 col-sm-offset2 col-md-10 col-md-offset-2 main" >
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
                     </asp:ContentPlaceHolder>
-                </div>
-                
+                </div>     
+                               
             </div>
         </div>
     </form>

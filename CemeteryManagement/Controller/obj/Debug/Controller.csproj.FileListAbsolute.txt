@@ -34,3 +34,12 @@ E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\Controller\bin\
 E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\Controller\obj\Debug\Controller.dll
 E:\faculta\Proiect Colectiv\GitSource\project\CemeteryManagement\Controller\obj\Debug\Controller.pdb
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Controller.dll
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Controller.pdb
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Model.dll
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Repository.dll
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Model.pdb
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\bin\Debug\Repository.pdb
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\obj\Debug\Controller.dll
+D:\Proiect Colectiv\Project2\CemeteryManagement\Controller\obj\Debug\Controller.pdb
