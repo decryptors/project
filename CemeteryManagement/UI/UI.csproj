@@ -90,7 +90,6 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Forms\WebForm1.aspx" />
     <Content Include="Webservices\DeceasedService.asmx" />
     <Content Include="Webservices\HomelessService.asmx" />
     <Content Include="Webservices\OwnersService.asmx" />
@@ -153,13 +152,6 @@
       <DependentUpon>OwnerForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -167,7 +159,7 @@
     <Compile Include="Webservices\HomelessService.asmx.cs">
       <DependentUpon>HomelessService.asmx</DependentUpon>
       <SubType>Component</SubType>
-	</Compile>
+    </Compile>
     <Compile Include="Webservices\OwnersService.asmx.cs">
       <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>

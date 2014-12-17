@@ -91,11 +91,8 @@
             
                                 <li><a href="HomelessForm.aspx">Homeless</a></li>
 
-                                <li><a href="OwnerForm.aspx">Owner</a></li>
+                                <li class="last"><a href="OwnerForm.aspx">Owner</a></li>
 
-                                <li class="last"><a href="#">Person</a></li>
-                               
-                               
                             </ul>
                         </li>
                     </ul>
