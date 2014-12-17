@@ -93,6 +93,7 @@
     <Content Include="Forms\WebForm1.aspx" />
     <Content Include="Webservices\DeceasedService.asmx" />
     <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\AreaForm.aspx.cs">
@@ -165,6 +166,10 @@
     </Compile>
     <Compile Include="Webservices\HomelessService.asmx.cs">
       <DependentUpon>HomelessService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+	</Compile>
+    <Compile Include="Webservices\OwnersService.asmx.cs">
+      <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
