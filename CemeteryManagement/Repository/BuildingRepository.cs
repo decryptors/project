@@ -7,11 +7,13 @@ namespace Repository
 {
     public class BuildingRepository
     {
+        #region String Constants
         private const string READ_ALL_BUILDINGS = "ReadAllBuildings";
         private const string ADD_BUILDING = "AddBuilding";
         private const string DELETE_BUILDING = "DeleteBuilding";
         private const string UPDATE_BUILDING = "UpdateBuilding";
         private const string READ_BUILDING_BY_ID = "GetBuildingById";
+        #endregion
 
         public BuildingRepository()
         {
@@ -72,6 +74,7 @@ namespace Repository
                 Type = reader.GetString(reader.GetOrdinal("Type")),
                 IsHistorical = reader.GetBoolean(reader.GetOrdinal("isHistorical"))
             };
-        } 
+        }
+        
     }
 }

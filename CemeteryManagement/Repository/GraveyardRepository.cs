@@ -5,13 +5,15 @@ using System.Data.SqlClient;
 using System.Linq;
 namespace Repository
 {
-    public class GraveyardRepository 
+    public class GraveyardRepository
     {
+        #region String Constants
         private const string READ_ALL_GRAVEYARDS = "ReadAllGraveyards";
         private const string ADD_GRAVEYARD = "AddGraveyard";
         private const string DELETE_GRAVEYARD = "DeleteGraveyard";
         private const string UPDATE_GRAVEYARD = "UpdateGraveyard";
         private const string READ_GRAVEYARD_BY_ID = "ReadGraveyardById";
+        #endregion
         public GraveyardRepository()
         {
             
