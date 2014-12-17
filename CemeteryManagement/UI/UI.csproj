@@ -87,9 +87,12 @@
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\PopupsStyle.css" />
-    <Content Include="Web.config" />
-    <Content Include="Forms\WebForm1.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Webservices\DeceasedService.asmx" />
+    <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\AreaForm.aspx.cs">
@@ -149,15 +152,16 @@
       <DependentUpon>OwnerForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Forms\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\HomelessService.asmx.cs">
+      <DependentUpon>HomelessService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\OwnersService.asmx.cs">
+      <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

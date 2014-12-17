@@ -19,8 +19,20 @@ namespace Controller
         public List<Deceased> ReadAll() {
             return DeceasedRepository.ReadAll();
         }
-        public void AddDeceased(Deceased deceased){
+        public void Add(Deceased deceased){
             DeceasedRepository.AddDeceased(deceased);
+        }
+        public void Update(Deceased deceased)
+        {
+            DeceasedRepository.UpdateDeceased(deceased);
+        }
+        public Deceased ReadById(int personId)
+        {
+            return DeceasedRepository.ReadByID(personId);
+        }
+        public void Delete(Deceased deceased)
+        {
+            DeceasedRepository.DeleteDeceased(deceased);
         }
     }
 }
