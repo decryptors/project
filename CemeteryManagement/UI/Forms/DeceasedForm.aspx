@@ -65,30 +65,6 @@
             });
         }
         function CreateGrid(deceased) {
-            /*
-            var string = "";
-            for (var i in deceased) {
-                string += (deceased[i]["Name"] + ",");
-            }
-            alert(string);
-            var obj = JSON.stringify({ deceased: deceased[0] });
-            /*
-            $.ajax({
-                type: "POST",
-                url: "/Webservices/DeceasedService.asmx/AddDeceased",
-                data: obj,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data) {
-                    alert(data.d);
-                },
-                failure: function (err, msg) {
-                    alert(err + msg);
-                }
-
-            });
-            */
-            //To Do Repair template usage
             $('#deceasedContainer').find("tr:gt(0)").remove();
             $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
         }
@@ -96,7 +72,7 @@
         function AddDeceased() {
             var deceased = new Object();
             deceased.Name = $("#inputName").val();
-            deceased.Religion = $("#inputName").val();
+            deceased.Religion = $("#inputReligion").val();
             deceased.DateOfBurial = $("inputDateOfBurial").val();
             deceased.IsVIP = $("#checkIsVIP").prop('checked');
             deceased.BurialCertificateNumber = $("#inputBurialCertificateNumber").val();
@@ -118,5 +94,7 @@
             });
         }
     </script>
+
+    <script src="/Scripts/AddDeceased.js"></script>
 
 </asp:Content>

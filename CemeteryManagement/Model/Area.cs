@@ -8,11 +8,12 @@ namespace Model
 {
     public class Area
     {
+        public int AreaId { get; set; }
         public List<Deceased> Deceased { get; set; }
         public int Number { get; set; }
         public double Surface { get; set; }
         public Graveyard Graveyard { get; set; }
         public List<Building> Buildings { get; set; }
-        public string PhotoURL { get; set; }
+        public byte[] Photo { get; set; }
     }
 }
