@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class HomelessController
+    public class HomelessController
     {
         private HomelessRepository HomelessRepository { get; set; }
          public HomelessController()

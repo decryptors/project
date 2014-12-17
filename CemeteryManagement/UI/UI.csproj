@@ -87,9 +87,12 @@
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\PopupsStyle.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Forms\WebForm1.aspx" />
     <Content Include="Webservices\DeceasedService.asmx" />
+    <Content Include="Webservices\HomelessService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\AreaForm.aspx.cs">
@@ -158,6 +161,10 @@
     </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\HomelessService.asmx.cs">
+      <DependentUpon>HomelessService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
