@@ -67,6 +67,7 @@
     <Content Include="Forms\ContractForm.aspx" />
     <Content Include="Forms\DeceasedForm.aspx" />
     <Content Include="Forms\GraveyardForm.aspx" />
+    <Content Include="Forms\HappyHolidays.aspx" />
     <Content Include="Forms\HomelessForm.aspx" />
     <Content Include="Forms\HomePageForm.aspx" />
     <Content Include="Forms\OwnerForm.aspx" />
@@ -144,6 +145,13 @@
     </Compile>
     <Compile Include="Forms\GraveyardForm.aspx.designer.cs">
       <DependentUpon>GraveyardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HappyHolidays.aspx.cs">
+      <DependentUpon>HappyHolidays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\HappyHolidays.aspx.designer.cs">
+      <DependentUpon>HappyHolidays.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomelessForm.aspx.cs">
       <DependentUpon>HomelessForm.aspx</DependentUpon>
