@@ -46,6 +46,7 @@
     <Compile Include="DeceasedRepository.cs" />
     <Compile Include="GraveyardRepository.cs" />
     <Compile Include="HomelessRepository.cs" />
+    <Compile Include="LoginRepository.cs" />
     <Compile Include="OwnerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

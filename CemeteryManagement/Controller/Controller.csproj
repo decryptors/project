@@ -44,6 +44,7 @@
     <Compile Include="DeceasedController.cs" />
     <Compile Include="GraveyardController.cs" />
     <Compile Include="HomelessController.cs" />
+    <Compile Include="LoginController.cs" />
     <Compile Include="OwnersController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

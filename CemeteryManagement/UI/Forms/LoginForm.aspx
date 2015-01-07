@@ -15,10 +15,15 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data) {
-                    alert(data.message);                    
+                    var response = JSON.parse(data.d);
+                    if (response.valid == "true") {
+                        document.location.replace("/Forms/DeceasedForm.aspx");
+                    } else {
+                        $("#wrongPassword").show();
+                    }
                 },
-                failure: function (err, msg) {
-                    alert(err + msg);
+                error: function (err, msg) {
+                    $("#wrongPassword").show();
                 }
 
             });            
@@ -29,10 +34,7 @@
             
                 <input class="form-control" id="inputName" type="text" name="name" placeholder="Nume" /><br />
                 <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Parola" /><br />
-                <%
-                    if (Request["wrong"]!=null)
-                        Response.Write("<span id=\"wrongPassword\">* Numele sau parola sunt greșite.</span> <br />");
-                %>                
+                <span id="wrongPassword" style="display: none">* Numele sau parola sunt greșite.</span> <br />       
                 <button class="btn btn-default" onclick="Login(); return false;">Login</button> <br />                
         </div>
 
