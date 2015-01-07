@@ -46,6 +46,7 @@
     <Compile Include="DeceasedWithGrave.cs" />
     <Compile Include="Graveyard.cs" />
     <Compile Include="Homeless.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
