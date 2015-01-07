@@ -4,6 +4,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
 
+  <script>
+  </script>
+
  <button id="btnPopupAdd">Adauga</button> 
     <p id="titleAddPopup" style="display:none;">Adauga contract</p>
     <div id="addDiv" style="display: none">
@@ -17,11 +20,11 @@
             onblur="onBlur(this)"
             onfocus="onFocus(this)"  />
         <p>Incepand cu data de: </p>
-        <input type="date" value="Data de inceput" />
+        <input type="text" class="datepicker"/>
         <p>Pana la data de</p>
-        <input type="date" value="Data de sfarsit"  />
-        <button id="cautaProprietar">Cauta proprietar</button>
-        
+        <input type="text" class="datepicker"/>
+        <button class="cautaProprietar" style="background-color:#424852;">Cauta proprietar</button>
+        <input type="text" value="Proprietar" disabled="true" />
     </div>
 
     <div id="showOwner" style="display: none">
@@ -39,27 +42,21 @@
     <button id="btnPopupEdit">Modifica</button> 
     <p id="titleEditPopup" style="display:none;">Editeaza contractul</p>
     <div id="editDiv" style="display: none">
-        <br />
         <input type="text" value="Numar infocet"
             onblur="onBlur(this)"
             onfocus="onFocus(this)" />
-        <br />
         <input type="text" value="Numar contract"
            onblur="onBlur(this)"
             onfocus="onFocus(this)"  />
-        <br />
-        <input type="text" value="Proprietar"
-           onblur="onBlur(this)"
-            onfocus="onFocus(this)"  />
-        <br />
         <input type="text" value="Numarul mormantului"
             onblur="onBlur(this)"
             onfocus="onFocus(this)"  />
-        <br />
-        <input type="date" value="Data de inceput" />
-        <br />
-        <input type="date" value="Data de sfarsit"  />
-        <br />
+        <p>Incepand cu data de: </p>
+        <input type="text" class="datepicker"/>
+        <p>Pana la data de</p>
+        <input type="text" class="datepicker"/>
+        <button class="cautaProprietar" style="background-color:#424852;">Cauta proprietar</button>
+        <input type="text" value="Proprietar" disabled="true" />
         
     </div>
 

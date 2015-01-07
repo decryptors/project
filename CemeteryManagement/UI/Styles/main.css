@@ -342,3 +342,8 @@ tr:nth-child(2n+1) {background: #DDDDDD;}
 h2.entity {
     text-align:center;
 }
+
+input {
+    margin-bottom:20px;
+    width: 100%;
+}

@@ -2,6 +2,8 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
+
     <h2 class="entity">Decedați</h2>
     <br />
     <div class="content-wrapper">              

@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
+        <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
         <button id="btnPopupAdd">Adauga</button> 
     <p id="titleAddPopup" style="display:none;">Adauga constructie</p>
     <div id="addDiv" style="display: none">
