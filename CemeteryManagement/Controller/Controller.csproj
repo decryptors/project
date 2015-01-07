@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaController.cs" />
     <Compile Include="BuildingController.cs" />
     <Compile Include="DeceasedController.cs" />
+    <Compile Include="GraveyardController.cs" />
     <Compile Include="HomelessController.cs" />
     <Compile Include="OwnersController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
