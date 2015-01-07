@@ -70,6 +70,7 @@
     <Content Include="Forms\HappyHolidays.aspx" />
     <Content Include="Forms\HomelessForm.aspx" />
     <Content Include="Forms\HomePageForm.aspx" />
+    <Content Include="Forms\LoginForm.aspx" />
     <Content Include="Forms\OwnerForm.aspx" />
     <Content Include="Forms\RegistrulAnualDeProgramareAInmormantarilor.aspx" />
     <Content Include="Forms\RegistrulDeMorminte.aspx" />
@@ -94,6 +95,7 @@
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\loginMain.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\PopupsStyle.css" />
     <Content Include="Web.config">
@@ -102,6 +104,7 @@
     <Content Include="Webservices\BuildingService.asmx" />
     <Content Include="Webservices\DeceasedService.asmx" />
     <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\LoginService.asmx" />
     <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +170,20 @@
     </Compile>
     <Compile Include="Forms\HomePageForm.aspx.designer.cs">
       <DependentUpon>HomePageForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginTemplate.Master.cs">
+      <DependentUpon>LoginTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginTemplate.Master.designer.cs">
+      <DependentUpon>LoginTemplate.Master</DependentUpon>
     </Compile>
     <Compile Include="Forms\OwnerForm.aspx.cs">
       <DependentUpon>OwnerForm.aspx</DependentUpon>
@@ -237,6 +254,10 @@
       <DependentUpon>HomelessService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Webservices\LoginService.asmx.cs">
+      <DependentUpon>LoginService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Webservices\OwnersService.asmx.cs">
       <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -250,6 +271,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="packages.config" />
+    <Content Include="Forms\LoginTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
