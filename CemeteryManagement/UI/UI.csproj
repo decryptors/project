@@ -67,8 +67,18 @@
     <Content Include="Forms\ContractForm.aspx" />
     <Content Include="Forms\DeceasedForm.aspx" />
     <Content Include="Forms\GraveyardForm.aspx" />
+    <Content Include="Forms\HappyHolidays.aspx" />
     <Content Include="Forms\HomelessForm.aspx" />
+    <Content Include="Forms\HomePageForm.aspx" />
+    <Content Include="Forms\LoginForm.aspx" />
     <Content Include="Forms\OwnerForm.aspx" />
+    <Content Include="Forms\RegistrulAnualDeProgramareAInmormantarilor.aspx" />
+    <Content Include="Forms\RegistrulDeMorminte.aspx" />
+    <Content Include="Forms\RegistrulDeMorminteMonumenteFunerare.aspx" />
+    <Content Include="Forms\RegistrulIndexAnualAlDecedatilor.aspx" />
+    <Content Include="Forms\RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx" />
+    <Content Include="Forms\RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx" />
+    <Content Include="Forms\RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx" />
     <Content Include="Scripts\AddArea.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -85,11 +95,18 @@
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\loginMain.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\PopupsStyle.css" />
-    <Content Include="Web.config" />
-    <Content Include="Forms\WebForm1.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Webservices\AreaService.asmx" />
+    <Content Include="Webservices\BuildingService.asmx" />
     <Content Include="Webservices\DeceasedService.asmx" />
+    <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\LoginService.asmx" />
+    <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\AreaForm.aspx.cs">
@@ -134,12 +151,40 @@
     <Compile Include="Forms\GraveyardForm.aspx.designer.cs">
       <DependentUpon>GraveyardForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HappyHolidays.aspx.cs">
+      <DependentUpon>HappyHolidays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\HappyHolidays.aspx.designer.cs">
+      <DependentUpon>HappyHolidays.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms\HomelessForm.aspx.cs">
       <DependentUpon>HomelessForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Forms\HomelessForm.aspx.designer.cs">
       <DependentUpon>HomelessForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomePageForm.aspx.cs">
+      <DependentUpon>HomePageForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\HomePageForm.aspx.designer.cs">
+      <DependentUpon>HomePageForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginTemplate.Master.cs">
+      <DependentUpon>LoginTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginTemplate.Master.designer.cs">
+      <DependentUpon>LoginTemplate.Master</DependentUpon>
     </Compile>
     <Compile Include="Forms\OwnerForm.aspx.cs">
       <DependentUpon>OwnerForm.aspx</DependentUpon>
@@ -148,16 +193,78 @@
     <Compile Include="Forms\OwnerForm.aspx.designer.cs">
       <DependentUpon>OwnerForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Forms\RegistrulAnualDeProgramareAInmormantarilor.aspx.cs">
+      <DependentUpon>RegistrulAnualDeProgramareAInmormantarilor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Forms\RegistrulAnualDeProgramareAInmormantarilor.aspx.designer.cs">
+      <DependentUpon>RegistrulAnualDeProgramareAInmormantarilor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulDeMorminte.aspx.cs">
+      <DependentUpon>RegistrulDeMorminte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulDeMorminte.aspx.designer.cs">
+      <DependentUpon>RegistrulDeMorminte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulDeMorminteMonumenteFunerare.aspx.cs">
+      <DependentUpon>RegistrulDeMorminteMonumenteFunerare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulDeMorminteMonumenteFunerare.aspx.designer.cs">
+      <DependentUpon>RegistrulDeMorminteMonumenteFunerare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulIndexAnualAlDecedatilor.aspx.cs">
+      <DependentUpon>RegistrulIndexAnualAlDecedatilor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulIndexAnualAlDecedatilor.aspx.designer.cs">
+      <DependentUpon>RegistrulIndexAnualAlDecedatilor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx.cs">
+      <DependentUpon>RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx.designer.cs">
+      <DependentUpon>RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx.cs">
+      <DependentUpon>RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx.designer.cs">
+      <DependentUpon>RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx.cs">
+      <DependentUpon>RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx.designer.cs">
+      <DependentUpon>RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webservices\AreaService.asmx.cs">
+      <DependentUpon>AreaService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\BuildingService.asmx.cs">
+      <DependentUpon>BuildingService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\HomelessService.asmx.cs">
+      <DependentUpon>HomelessService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\LoginService.asmx.cs">
+      <DependentUpon>LoginService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\OwnersService.asmx.cs">
+      <DependentUpon>OwnersService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
@@ -169,6 +276,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="packages.config" />
+    <Content Include="Forms\LoginTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -5,13 +5,15 @@ using System.Data.SqlClient;
 using System.Linq;
 namespace Repository
 {
-    public class GraveyardRepository 
+    public class GraveyardRepository
     {
+        #region String Constants
         private const string READ_ALL_GRAVEYARDS = "ReadAllGraveyards";
         private const string ADD_GRAVEYARD = "AddGraveyard";
         private const string DELETE_GRAVEYARD = "DeleteGraveyard";
         private const string UPDATE_GRAVEYARD = "UpdateGraveyard";
         private const string READ_GRAVEYARD_BY_ID = "ReadGraveyardById";
+        #endregion
         public GraveyardRepository()
         {
             
@@ -34,7 +36,6 @@ namespace Repository
         public void AddGraveyard(Graveyard graveyard)
         {
             SqlParameter[] param = {
-                new SqlParameter("@Id", SqlDbType.Int) { Value = graveyard.GraveyardId },
                 new SqlParameter("@Name", SqlDbType.NVarChar, -1) { Value = graveyard.Name },
                 new SqlParameter("@Address", SqlDbType.NVarChar, -1) { Value = graveyard.Address }    
             };
@@ -66,7 +67,7 @@ namespace Repository
         {
             return new Graveyard
             {
-                GraveyardId = reader.GetInt32(reader.GetOrdinal("PersonId")),
+                GraveyardId = reader.GetInt32(reader.GetOrdinal("GraveyardId")),
                 Name = reader.GetString(reader.GetOrdinal("Name")),
                 Address = reader.GetString(reader.GetOrdinal("Address"))
                 

@@ -1,57 +1,41 @@
 ﻿using Controller;
 using Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Services;
-using Newtonsoft.Json;
 
 namespace UI.Webservices
 {
     /// <summary>
-    /// Summary description for DeceasedService
+    /// Summary description for BuildingService
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     [System.Web.Script.Services.ScriptService]
-    public class DeceasedService : System.Web.Services.WebService
+    public class BuildingService : System.Web.Services.WebService
     {
+
         private JavaScriptSerializer _serializer = new JavaScriptSerializer();
-        private DeceasedController _deceasedController = new DeceasedController();
+        private BuildingController _buildingController = new BuildingController();
 
         [WebMethod]
         public string ReadAll()
         {
-            return JsonConvert.SerializeObject(_deceasedController.ReadAll(), Formatting.None, new JsonSerializerSettings());
+            return JsonConvert.SerializeObject(_buildingController.ReadAll(), Formatting.None, new JsonSerializerSettings());
         }
 
         [WebMethod]
-        public string ReadDeceasedWithAreaId(DateTime date)
-        {
-            return JsonConvert.SerializeObject(_deceasedController.ReadDeceasedWithAreaId(date), Formatting.None, new JsonSerializerSettings());
-        }
-
-        [WebMethod]
-        public string AddDeceased(Deceased deceased)
+        public string AddBuilding(Building building, int areaId)
         {
             try
             {
-                _deceasedController.Add(deceased);
-                return "true";
-            }
-            catch (Exception exception) {
-                return exception.Message;
-            }
-        }
-        [WebMethod]
-        public string EditDeceased(Deceased deceased)
-        {
-            try
-            {
-                _deceasedController.Update(deceased);
+                _buildingController.Add(building, areaId);
                 return "true";
             }
             catch (Exception exception)
@@ -60,11 +44,25 @@ namespace UI.Webservices
             }
         }
         [WebMethod]
-        public string ReadDeceasedById(int personId)
+        public string EditBuilding(Building building, int areaId)
         {
             try
             {
-                return JsonConvert.SerializeObject(_deceasedController.ReadById(personId), Formatting.None, new JsonSerializerSettings());
+                _buildingController.Update(building, areaId);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
+        [WebMethod]
+        public string ReadBuildingByID(int buildingId)
+        {
+            try
+            {
+
+                return JsonConvert.SerializeObject(_buildingController.ReadByID(buildingId), Formatting.None, new JsonSerializerSettings());
             }
             catch (Exception exception)
             {

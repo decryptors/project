@@ -67,30 +67,6 @@
             });
         }
         function CreateGrid(deceased) {
-            /*
-            var string = "";
-            for (var i in deceased) {
-                string += (deceased[i]["Name"] + ",");
-            }
-            alert(string);
-            var obj = JSON.stringify({ deceased: deceased[0] });
-            /*
-            $.ajax({
-                type: "POST",
-                url: "/Webservices/DeceasedService.asmx/AddDeceased",
-                data: obj,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data) {
-                    alert(data.d);
-                },
-                failure: function (err, msg) {
-                    alert(err + msg);
-                }
-
-            });
-            */
-            //To Do Repair template usage
             $('#deceasedContainer').find("tr:gt(0)").remove();
             $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
         }

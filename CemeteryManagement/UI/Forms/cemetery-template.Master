@@ -38,7 +38,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Managementul cimitirelor</a>
+                    <a class="navbar-brand" href="HomePageForm.aspx">Managementul cimitirelor</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -55,58 +55,55 @@
                      <ul class="nav nav-sidebar">
                         <li role="presentation" class="has-sub">
                             <a class="registrii-toggle" href="#" role="button">
-                                    Registrii 
+                                    Regiștrii 
                             </a>
                             <ul class="nav hide-menu" role="menu">
-                                <li class="active"><a href="#">Anual de programare a înmormântărilor</a></li>
+                                <li class="active"><a href="RegistrulAnualDeProgramareAInmormantarilor.aspx">Anual de programare a înmormântărilor</a></li>
                                 
-                                <li><a href="#">De morminte</a></li>
+                                <li><a href="RegistrulDeMorminte.aspx">De morminte</a></li>
                             
-                                <li><a href="#">De morminte-monumente funerare</a></li>
+                                <li><a href="RegistrulDeMorminteMonumenteFunerare.aspx">De morminte-monumente funerare</a></li>
                                 
-                                <li><a href="#">Index anual al decedatilor</a></li>
+                                <li><a href="RegistrulIndexAnualAlDecedatilor.aspx">Index anual al decedatilor</a></li>
                                 
-                                <li><a href="#">Anual de evidenta a decedatilor fara apartinatori</a></li>
+                                <li><a href="RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx">Anual de evidenta a decedatilor fara apartinatori</a></li>
                              
-                                <li><a href="#">Cu evidenta cererilor de atribuire a locurilor de inhumare</a></li>
+                                <li><a href="RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx">Cu evidenta cererilor de atribuire a locurilor de inhumare</a></li>
                                
-                                <li class="last"><a href="#">Anual de evidenta a contractelor de concesiune</a></li>
+                                <li class="last"><a href="RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx">Anual de evidenta a contractelor de concesiune</a></li>
                 
                             </ul>
                         </li>
                          <li role="presentation" class="has-sub">
                             <a class="registrii-toggle" href="#" role="button">
-                                    Manage 
+                                    Administrare 
                             </a>
                             <ul class="nav hide-menu last" role="menu">
-                                <li class="active"><a href="AreaForm.aspx">Area</a></li>
+                                <li class="active"><a href="AreaForm.aspx">Parcele</a></li>
                                 
-                                <li><a href="BuildingForm.aspx">Building</a></li>
+                                <li><a href="BuildingForm.aspx">Clădiri</a></li>
                             
-                                <li><a href="ContractForm.aspx">Contract</a></li>
+                                <li><a href="ContractForm.aspx">Contracte</a></li>
                                 
-                                <li><a href="DeceasedForm.aspx">Deceased</a></li>
+                                <li><a href="DeceasedForm.aspx">Decedați</a></li>
                                 
-                                <li><a href="GraveyardForm.aspx">Graveyard</a></li>
+                                <li><a href="GraveyardForm.aspx">Morminte</a></li>
             
-                                <li><a href="HomelessForm.aspx">Homeless</a></li>
+                                <li><a href="HomelessForm.aspx">Fără aparținători</a></li>
 
-                                <li><a href="OwnerForm.aspx">Owner</a></li>
-
-                                <li class="last"><a href="#">Person</a></li>
-                               
-                               
+                                <li class="last"><a href="OwnerForm.aspx">Concesionari</a></li>
+                                                              
                             </ul>
                         </li>
                     </ul>
                     </div>
-                </div>       
-                <div class="col-sm-9 col-sm-offset2 col-md-10 col-md-offset-2 main">
+                </div>  
+                <div class="col-sm-9 col-sm-offset2 col-md-10 col-md-offset-2 main" >
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
                     </asp:ContentPlaceHolder>
-                </div>
-                
+                </div>     
+                               
             </div>
         </div>
     </form>

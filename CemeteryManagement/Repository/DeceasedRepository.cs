@@ -1,4 +1,5 @@
 ﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -12,6 +13,7 @@ namespace Repository
         private const string DELETE_DECEASED = "DeleteDeceased";
         private const string UPDATE_DECEASED = "UpdateDeceased";
         private const string READ_BY_PERSONID = "ReadByIDDeceased";
+        private const string READ_DECEASED_BY_YEAR = "ReadDeceasedByYear";
         public DeceasedRepository()
         {
            
@@ -58,6 +60,27 @@ namespace Repository
             };
             DBManager.ExecuteCommand(UPDATE_DECEASED, deceasedParam);
         }
+
+        public List<DeceasedWithGrave> ReadDeceasedWithAreaId(DateTime date) {
+            SqlParameter[] deceasedParam = {
+                new SqlParameter("@date", SqlDbType.Date) { Value = date.Date }
+            };
+            return DBManager.ExecuteReadCommand<DeceasedWithGrave>(READ_DECEASED_BY_YEAR, ReaderToModelForDeceasedWithGrave, deceasedParam);
+        }
+
+        protected DeceasedWithGrave ReaderToModelForDeceasedWithGrave(SqlDataReader reader)
+        {
+
+            return new DeceasedWithGrave
+            {
+                PersonId = reader.GetInt32(reader.GetOrdinal("PersonId")),
+                Name = reader.GetString(reader.GetOrdinal("Name")),
+                Religion = reader.GetString(reader.GetOrdinal("Religion")),
+                DateOfBurial = reader.GetDateTime(reader.GetOrdinal("DateOfBurial")),
+                AreaId = reader.GetInt32(reader.GetOrdinal("AreaId"))
+            };
+        } 
+        
 
         protected  Deceased ReaderToModel(SqlDataReader reader)
         {

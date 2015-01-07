@@ -14,6 +14,6 @@ namespace Model
         public double Surface { get; set; }
         public Graveyard Graveyard { get; set; }
         public List<Building> Buildings { get; set; }
-        public string PhotoURL { get; set; }
+        public byte[] Photo { get; set; }
     }
 }
