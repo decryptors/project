@@ -43,6 +43,7 @@
     <Compile Include="Building.cs" />
     <Compile Include="Contract.cs" />
     <Compile Include="Deceased.cs" />
+    <Compile Include="DeceasedWithGrave.cs" />
     <Compile Include="Graveyard.cs" />
     <Compile Include="Homeless.cs" />
     <Compile Include="Owner.cs" />

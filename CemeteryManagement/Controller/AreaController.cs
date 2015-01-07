@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class AreaController
+    public class AreaController
     {
         private AreaRepository AreaRepository { get; set; }
 
