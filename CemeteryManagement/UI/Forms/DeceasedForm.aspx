@@ -1,7 +1,10 @@
-﻿<%@ Page MasterPageFile="/Forms/cemetery-template.Master" %>
+<%@ Page MasterPageFile="/Forms/cemetery-template.Master" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
+    <link href="/Styles/grids.css" rel="stylesheet" />
+
     <h2 class="entity">Decedați</h2>
     <br />
     <div class="content-wrapper">              
@@ -24,11 +27,11 @@
         <br />
         <table id="deceasedContainer" class="table table-stripped table-bordered">
                 <tr>
-                    <th style="text-align: left;" class="textsort tableheading">Nume</th>
-                    <th style="text-align: left;" class="categorysort tableheading">Religie</th>
-                    <th style="text-align: left;" class="levelsort tableheading">Data înhumării</th>
-                    <th style="text-align: left;" class="tagsort tableheading">Martir/Erou</th>
-                    <th style="text-align: left;" class="questiontypesort tableheading">Nr. cert. deces</th>
+                    <th class="textsort tableheading">Nume</th>
+                    <th class="categorysort tableheading">Religie</th>
+                    <th class="levelsort tableheading">Data înhumării</th>
+                    <th class="tagsort tableheading">Martir/Erou</th>
+                    <th class="questiontypesort tableheading">Nr. cert. deces</th>
                 </tr>
         </table>
         <script id="deceasedTemplate" type="text/x-jquery-tmpl">

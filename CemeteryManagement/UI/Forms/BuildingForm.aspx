@@ -1,9 +1,12 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="/Forms/AreaForm.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm" %>
 
+<%--Should be removed!--%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
-        <button id="btnPopupAdd">Adauga</button> 
+    <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
+    <link href="/Styles/grids.css" rel="stylesheet" />
+
+    <button id="btnPopupAdd">Adauga</button> 
     <p id="titleAddPopup" style="display:none;">Adauga constructie</p>
     <div id="addDiv" style="display: none">
         

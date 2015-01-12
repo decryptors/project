@@ -1,8 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.Forms.RegistrulAnualDeEvidentaADecedatilorFaraApartinatori" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.Forms.RegistrulAnualDeEvidentaADecedatilorFaraApartinatori" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2 class="entity">Registrul index anual al decedaților</h2>
+    <link href="/Styles/grids.css" rel="stylesheet" />
+
+    <h2 class="entity">Registrul anual de evidenţă a decedaţilor fără aparţinători</h2>
     <br />
     <div class="content-wrapper">              
                 
@@ -10,9 +12,9 @@
         <br />
         <table id="deceasedContainer" class="table table-stripped table-bordered">
                 <tr>
-                    <th style="text-align: left;" class="textsort tableheading">Adeverinţă de înhumare</th>
-                    <th style="text-align: left;" class="categorysort tableheading">Solicitare din partea IML/Asistenţă socială</th>
-                    <th style="text-align: left;" class="categorysort tableheading">Hartă</th>
+                    <th class="textsort tableheading">Adeverinţă de înhumare</th>
+                    <th class="categorysort tableheading">Solicitare din partea IML/Asistenţă socială</th>
+                    <th class="categorysort tableheading">Hartă</th>
                 </tr>
         </table>
        

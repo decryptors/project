@@ -1,7 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistrulDeMorminteMonumenteFunerare.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.Forms.RegistrulDeMorminteMonumenteFunerare" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistrulDeMorminteMonumenteFunerare.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.Forms.RegistrulDeMorminteMonumenteFunerare" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link href="/Styles/grids.css" rel="stylesheet" />
+
     <h2 class="entity">Registrul de morminte-monumete funerare</h2>
     <br />
     <div class="content-wrapper">              
@@ -12,15 +14,22 @@
                 <tr>
                     <th style="text-align: left;" class="textsort tableheading">Cimitir</th>
                     <th style="text-align: left;" class="categorysort tableheading">Parcelă</th>
+                    <th rowspan='2' class="textsort tableheading">Cimitir</th>
+                    <th rowspan='2' class="categorysort tableheading">Parcelă</th>
                     <%-- parcela == nr mormant??? --%>
-                    <th style="text-align: left;" class="questiontypesort tableheading">Nr. mormânt</th>
-                    <th style="text-align: left;" class="categorysort tableheading">Suprafață</th>
-                    <%-- TODO: Detinator trebuie sa aiba Nume, Prenume, Domiciliu --%>
-                    <th style="text-align: left;" class="categorysort tableheading">Deținător</th>
-                    <%-- TODO: Persoana inmormantata trebuie sa aiba Nume, Prenume, Data inmormantarii 
-                         subgrid? cu persoane inmormantate, popup? --%>
-                    <th style="text-align: left;" class="questiontypesort tableheading">Persoană înmormântată</th>
-                    <th style="text-align: left;" class="questiontypesort tableheading">Observaţii</th>
+                    <th rowspan='2' class="questiontypesort tableheading">Nr. mormânt</th>
+                    <th rowspan='2' class="categorysort tableheading">Suprafață</th>
+                    <th colspan='3' class="categorysort tableheading">Deținător</th>
+                    <th colspan='3' class="questiontypesort tableheading">Persoană înhumată</th>
+                    <th rowspan='2' class="questiontypesort tableheading">Observaţii</th>
+                </tr>
+                <tr>
+                    <th>Nume</th>
+                    <th>Prenume</th>
+                    <th>Domiciliu</th>
+                    <th>Nume</th>
+                    <th>Prenume</th>
+                    <th>Dată înhumare</th>
                 </tr>
         </table>
        

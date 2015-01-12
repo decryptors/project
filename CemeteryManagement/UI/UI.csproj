@@ -94,6 +94,7 @@
     <Content Include="Styles\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\grids.css" />
     <Content Include="Styles\main.css" />
     <Content Include="Styles\PopupsStyle.css" />
     <Content Include="Web.config">
