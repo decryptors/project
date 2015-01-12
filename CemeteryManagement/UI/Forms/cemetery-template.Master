@@ -55,7 +55,7 @@
                      <ul class="nav nav-sidebar">
                         <li role="presentation" class="has-sub">
                             <a class="registrii-toggle" href="#" role="button">
-                                    Registrii 
+                                    Regiștrii 
                             </a>
                             <ul class="nav hide-menu" role="menu">
                                 <li class="active"><a href="RegistrulAnualDeProgramareAInmormantarilor.aspx">Anual de programare a înmormântărilor</a></li>
@@ -76,22 +76,22 @@
                         </li>
                          <li role="presentation" class="has-sub">
                             <a class="registrii-toggle" href="#" role="button">
-                                    Manage 
+                                    Administrare 
                             </a>
                             <ul class="nav hide-menu last" role="menu">
-                                <li class="active"><a href="AreaForm.aspx">Area</a></li>
+                                <li class="active"><a href="AreaForm.aspx">Parcele</a></li>
                                 
-                                <li><a href="BuildingForm.aspx">Building</a></li>
+                                <li><a href="BuildingForm.aspx">Clădiri</a></li>
                             
-                                <li><a href="ContractForm.aspx">Contract</a></li>
+                                <li><a href="ContractForm.aspx">Contracte</a></li>
                                 
-                                <li><a href="DeceasedForm.aspx">Deceased</a></li>
+                                <li><a href="DeceasedForm.aspx">Decedați</a></li>
                                 
-                                <li><a href="GraveyardForm.aspx">Graveyard</a></li>
+                                <li><a href="GraveyardForm.aspx">Morminte</a></li>
             
-                                <li><a href="HomelessForm.aspx">Homeless</a></li>
+                                <li><a href="HomelessForm.aspx">Fără aparținători</a></li>
 
-                                <li class="last"><a href="OwnerForm.aspx">Owner</a></li>
+                                <li class="last"><a href="OwnerForm.aspx">Concesionari</a></li>
                                                               
                             </ul>
                         </li>
