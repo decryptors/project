@@ -2,27 +2,27 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
     <link href="/Styles/grids.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
 
     <h2 class="entity">Decedați</h2>
     <br />
     <div class="content-wrapper">              
-        <button id="btnPopup" class="btn btn-default">Adaugă</button>   
-        <div id="dialog">
+        <button id="btnPopupAdd" class="btn btn-default">Adaugă</button> 
+        <p id="titleAddPopup" style="display:none;">Adauga decedat</p>
+        <div id="addDiv" style="display: none">
             <input id="inputName" type="text" name="Name" placeholder="Nume" /><br />
             <input id="inputReligion" type="text" name="Religion" placeholder="Religie" /><br />
-            <input id="inputDateOfBurial" type="text" name="DateOfBurial" placeholder="Data înhumării" /><br />
-            Important: <input id="checkImportant" type="checkbox" name="IsVIP"/><br />
+            <input id="inputDateOfBurial" type="text" class="datepicker" name="DateOfBurial" placeholder="Data înhumării" /><br />
+            Martir/Erou: <input id="checkImportant" type="checkbox" name="IsVIP"/><br />
             <input id="inputBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" /><br />
-            <button onclick="AddDeceased()">Add</button>
         </div>
         <div id="modal_dialog" style="display: none">
             This is a Modal Background popup
         </div>
 
         
-        <button id="btnPopup" class="btn btn-default">Modifică</button> 
+        <button id="btnPopupEdit" class="btn btn-default">Modifică</button>
         <div class="clear"></div>
         <br />
         <table id="deceasedContainer" class="table table-stripped table-bordered">
