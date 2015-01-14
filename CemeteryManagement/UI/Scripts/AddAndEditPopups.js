@@ -19,30 +19,10 @@
             resizable: false
         });
         $("#dialog").dialog('open');
+        if ($("#inputAreaId") != null)
+            loadAreaSelect($("#inputAreaId"));
     });
-
-    $("#btnPopupEdit").click(function (event) {        
-        event.stopPropagation();
-        event.preventDefault();
-        $("#editDiv").dialog({
-            title: document.getElementById("titleEditPopup").innerHTML,
-            buttons: [
-                {
-                    text: "Modifica",
-                    "class": 'btn',
-                    click: function () {
-                        finishEdit();
-                    },
-                    OK: function () {
-                    }
-                }],
-            //modal: true,
-            draggable: false,
-            resizable: false
-        });
-        $("#dialog").dialog('open');
-    });
-    
+   
 
     $(".cautaContract").click(function (event) {
         event.stopPropagation();
@@ -84,6 +64,8 @@
         $("#dialog").dialog('open');
     });
 
+   
+
     $(".datepicker").datepicker();
     loadGrid();
 });
@@ -121,4 +103,34 @@ function onFocus(el) {
 
 function CreateEditButtons() {   
 
+}
+
+function loadAreaSelect(obj, buildingId) {
+    $.ajax({
+        type: "POST",
+        url: "/Webservices/AreaService.asmx/ReadAll",
+        data: "{}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            obj.empty();
+            var deserializedData = JSON.parse(data.d);            
+            for (var i = 0; i < deserializedData.length; i++) {
+                var area = deserializedData[i];              
+                var selected = false;
+                if (buildingId>0) {
+                    for(var building = 0; building<area.Buildings.length; building++)
+                        if (area.Buildings[building].BuildingId==buildingId)
+                            selected = true;
+                }
+                obj.append("<option value='" + area.AreaId + "'" + (selected==true?" selected ":"") + ">" +
+                    area.Graveyard.Name + "-" + area.Number+"</option>");
+            }
+
+        },
+        failure: function (err, msg) {
+            alert(err + msg);
+        }
+
+    });
 }
