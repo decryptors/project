@@ -79,12 +79,13 @@
     <Content Include="Forms\RegistrulAnualDeEvidentaADecedatilorFaraApartinatori.aspx" />
     <Content Include="Forms\RegistrulCuEvidentaCererilorDeAtribuireALocurilorDeInhumare.aspx" />
     <Content Include="Forms\RegistrulAnualDeEvidentaAContractelorDeConcesiune.aspx" />
+    <Content Include="Scripts\AddAndEditPopups.js" />
     <Content Include="Scripts\AddArea.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\docs.min.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
-    <Content Include="Scripts\AddDeceased.js" />
+    <Content Include="Scripts\DeceasedForm.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.tmpl.min.js" />
