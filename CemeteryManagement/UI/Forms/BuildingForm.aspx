@@ -14,7 +14,7 @@
         <div id="addDiv" style="display: none">
             <input id="inputType" type="text" name="Type" placeholder="Tipul clădirii" /><br />
             <input id="inputAreaId" type="text" name="Type" placeholder="Area id" /><br />
-            Clădire istorică <input id="checkImportant" type="checkbox" name="IsHistorical"/><br />
+            Cladire istorica: <input id="checkImportant" type="checkbox" name="IsHistorical"/><br />
         </div>
         <p id="titleEditPopup" style="display:none;">Modifică clădire</p>
         <div id="editDiv" style="display: none">
