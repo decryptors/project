@@ -1,13 +1,13 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="/Forms/AreaForm.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
+    <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
     <link href="/Styles/grids.css" rel="stylesheet" />
 
     <h2 class="entity">Cimitire</h2>
     <br />
     <div class="content-wrapper">      
-        <button id="btnPopupAdd">Adauga</button> 
+        <button id="btnPopupAdd" class="btn btn-default">Adauga</button> 
         <p id="titleAddPopup" style="display:none;">Adauga cimitir</p>
         <div id="addDiv" style="display: none">
             <input type="text" value="Nume"
@@ -16,9 +16,9 @@
             <input type="text" value="Adresa"
                onblur="onBlur(this)"
                 onfocus="onFocus(this)"  />
-             </div>
+        </div>
 
-        <button id="btnPopupEdit">Modifica</button> 
+        <button id="btnPopupEdit" class="btn btn-default">Modifica</button> 
         <p id="titleEditPopup" style="display:none;">Modifica datele cimitirului</p>
         <div id="editDiv" style="display: none">
             <input type="text" value="Nume"

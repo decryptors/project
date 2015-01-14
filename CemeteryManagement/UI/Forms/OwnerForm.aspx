@@ -8,7 +8,7 @@
     <h2 class="entity">Concesionari</h2>
     <br />
     <div class="content-wrapper">              
-        <button id="btnPopupAdd">Adauga</button> 
+        <button id="btnPopupAdd" class="btn btn-default">Adauga</button> 
         <p id="titleAddPopup" style="display:none;">Adauga proprietar</p>
         <div id="addDiv" style="display: none">
             <input type="text" value="Nume"
@@ -20,7 +20,7 @@
 
         </div>
 
-        <button id="btnPopupEdit">Modifica</button> 
+        <button id="btnPopupEdit" class="btn btn-default">Modifica</button> 
         <p id="titleEditPopup" style="display:none;">Modifica datele proprietarului</p>
         <div id="editDiv" style="display: none">
             <input type="text" value="Nume"

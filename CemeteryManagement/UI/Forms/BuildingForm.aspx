@@ -14,8 +14,13 @@
         <div id="addDiv" style="display: none">   
             <input id="editId" type="hidden" />
             <input id="inputType" type="text" name="Type" placeholder="Tipul clădirii" /><br />
+<<<<<<< HEAD
             Parcelă:<select id="inputAreaId" class="AreaIdSelect"></select><br />      
             Clădire istorică <input id="inputIsHistorical" type="checkbox" name="IsHistorical"/><br />
+=======
+            <input id="inputAreaId" type="text" name="Type" placeholder="Area id" /><br />
+            Cladire istorica: <input id="checkImportant" type="checkbox" name="IsHistorical"/><br />
+>>>>>>> origin/master
         </div>
         <p id="titleEditPopup" style="display:none;">Modifică clădire</p>
         <div id="editDiv" style="display: none">

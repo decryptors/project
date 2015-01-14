@@ -1,13 +1,13 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="/Forms/AreaForm.aspx.cs" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="Styles/PopupsStyle.css"/>
+    <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
     <link href="/Styles/grids.css" rel="stylesheet" />
     
     <h2 class="entity">Morminte</h2>
     <br />
     <div class="content-wrapper">   
-        <button id="btnPopupAdd">Adauga</button> 
+        <button id="btnPopupAdd" class="btn btn-default">Adauga</button> 
         <p id="titleAddPopup" style="display:none;">Adauga mormant</p>
         <div class="popup-overlay">
             <div id="addDiv" style="display: none">
@@ -25,7 +25,7 @@
                     onfocus="onFocus(this)"  />
                 <p>Alegeti fotografii</p>
                 <input  class="form-control" type="file" alt="Adauga fotografii..."/>
-                <button class="cautaContract" style="background-color:#424852;">Cauta contract</button>
+                <button class="cautaProprietar" style="background-color:#424852;">Cauta contract</button>
 
             </div>
 
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <button id="btnPopupEdit">Modifica</button> 
+        <button id="btnPopupEdit" class="btn btn-default">Modifica</button> 
         <p id="titleEditPopup" style="display:none;">Modifica datele mormantului</p>
         <div id="editDiv" style="display: none">
             <select class="form-control">
