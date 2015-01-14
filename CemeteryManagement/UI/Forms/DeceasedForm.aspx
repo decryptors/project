@@ -17,7 +17,7 @@
             Martir/Erou: <input id="checkImportant" type="checkbox" name="IsVIP"/><br />
             <input id="inputBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" /><br />
         </div>
-        <p id="titleEditPopup" style="display:none;">Adauga decedat</p>
+        <p id="titleEditPopup" style="display:none;">Modifică decedat</p>
         <div id="editDiv" style="display: none">
             <input id="editId" type="hidden" />
             <input id="editName" type="text" name="Name" placeholder="Nume" /><br />
