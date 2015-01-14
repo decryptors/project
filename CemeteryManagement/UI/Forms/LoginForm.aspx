@@ -32,10 +32,10 @@
         <div id="loginFormContainer">
             <h4>Managementul cimitirelor</h4><br />
             
-                <input class="form-control" id="inputName" type="text" name="name" placeholder="Nume" /><br />
-                <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Parola" /><br />
-                <span id="wrongPassword" style="display: none">* Numele sau parola sunt greșite.</span> <br />       
-                <button class="btn btn-default" onclick="Login(); return false;">Login</button> <br />                
+             <input class="form-control" id="inputName" type="text" name="name" placeholder="Nume" /><br />
+             <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Parola" /><br />             
+             <button class="btn btn-default" onclick="Login(); return false;">Login</button> <br />                      
+            <span id="wrongPassword" style="display: none">* Numele sau parola sunt greșite.<br /></span>                           
         </div>
 
     

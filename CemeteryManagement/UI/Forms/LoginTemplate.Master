@@ -36,14 +36,11 @@
 </head>
 <body > 
     <!--<form id="formLogin" runat="server">    -->
-        <div class="container-fluid"> 
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-4 col-md-20 col-md-offset- main" >
+        <div class="content"> 
+            <div class="table-cell">                   
                     <asp:ContentPlaceHolder ID="ContentPlaceHolderLogin" runat="server">
         
-                    </asp:ContentPlaceHolder>
-                </div>     
-                               
+                    </asp:ContentPlaceHolder>                               
             </div>
         </div>
     <!--</form>-->
