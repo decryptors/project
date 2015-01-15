@@ -42,6 +42,7 @@
     <Compile Include="Area.cs" />
     <Compile Include="Building.cs" />
     <Compile Include="Contract.cs" />
+    <Compile Include="ContractWithPerson.cs" />
     <Compile Include="Deceased.cs" />
     <Compile Include="DeceasedWithGrave.cs" />
     <Compile Include="Graveyard.cs" />
