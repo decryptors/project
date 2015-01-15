@@ -48,6 +48,7 @@
     <Compile Include="LoginController.cs" />
     <Compile Include="OwnersController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
