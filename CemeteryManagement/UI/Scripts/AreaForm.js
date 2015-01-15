@@ -2,15 +2,14 @@
 
 function FinishAdd() {
     var area = new Object();    
-    var contractId = 10;
+    var contractId = $("#inputContractId").val();
     area.Number = $("#inputNumber").val();
     area.Surface = $("#inputSurface").val();
-    area.Photo = $("#inputPhoto").val();
-    alert(area.Photo);
+    //area.Photo = $("#inputPhoto").prop("files")[0];    
     area.Graveyard = new Object();
-    area.Graveyard.GraveyardId = $("#inputGraveyardId").val();
-
+    area.Graveyard.GraveyardId = $("#inputGraveyardId").val();    
     var obj = JSON.stringify({ area: area, contractId: contractId });
+    alert(obj);
     $.ajax({
         type: "POST",
         url: "/Webservices/AreaService.asmx/AddArea",
@@ -33,13 +32,14 @@ function startEdit(id) {
     $("#editId").val(id);
     $("#editNumber").val($("#row" + id + " td:nth-child(1)").html());
     $("#editSurface").val($("#row" + id + " td:nth-child(3)").html());
-    $("#editContractId").val("11");
+    //$("#editContractId").val("11");
     loadGraveyardSelect($("#editGraveyardId"), id);
+    loadContractSelect($("#editContractId"), id);    
 }
 
 function finishEdit() {
     var area = new Object();
-    var contractId = 10;
+    var contractId = $("#editContractId").val();
     area.AreaId = $("#editId").val();
     area.Number = $("#editNumber").val();
     area.Surface = $("#editSurface").val();
