@@ -5,7 +5,8 @@ function FinishAdd() {
     var contractId = 10;
     area.Number = $("#inputNumber").val();
     area.Surface = $("#inputSurface").val();
-    //area.Photo = $("#inputPhoto").val();
+    area.Photo = $("#inputPhoto").val();
+    alert(area.Photo);
     area.Graveyard = new Object();
     area.Graveyard.GraveyardId = $("#inputGraveyardId").val();
 

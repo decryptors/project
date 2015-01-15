@@ -8,26 +8,21 @@
     <h2 class="entity">Concesionari</h2>
     <br />
     <div class="content-wrapper">              
-        <button id="btnPopupAdd" class="btn btn-default">Adauga</button> 
-        <p id="titleAddPopup" style="display:none;">Adauga proprietar</p>
+     <button id="btnPopupAdd" class="btn btn-default">Adaugă</button> 
+        <p id="titleAddPopup" style="display:none;">Adauga apartinator</p>
         <div id="addDiv" style="display: none">
-            <input type="text" value="Nume"
-                onblur="onBlur(this)"
-                onfocus="onFocus(this)" />
-            <input type="text" value="Adresa"
-               onblur="onBlur(this)"
-                onfocus="onFocus(this)"  />
+            <input id="inputName" type="text" name="Name" placeholder="Nume" /><br />
+            <input id="inputAddress" type="text" name="Address" placeholder="Adresa" /><br />
+           </div>
 
-        </div>
-        <p id="titleEditPopup" style="display:none;">Modifica datele proprietarului</p>
+        <p id="titleEditPopup" style="display:none;">Modifică apartinator</p>
         <div id="editDiv" style="display: none">
-            <input type="text" value="Nume"
-                onblur="onBlur(this)"
-                onfocus="onFocus(this)" />
-            <input type="text" value="Adresa"
-               onblur="onBlur(this)"
-                onfocus="onFocus(this)"  />
-
+            <input id="editId" type="hidden" />
+            <input id="editName" type="text" name="Name" placeholder="Nume" /><br />
+            <input id="editAddress" type="text" name="Address" placeholder="Adresa" /><br />
+         </div>
+        <div id="modal_dialog" style="display: none">
+            This is a Modal Background popup
         </div>
         
         <div class="clear"></div>
@@ -36,7 +31,6 @@
                 <tr>
                     <th class="textsort tableheading">Nume</th>
                     <th class="textsort tableheading">Address</th>
-                    <th></th>
                 </tr>
         </table>
         <script id="ownerTemplate" type="text/x-jquery-tmpl">
@@ -44,42 +38,12 @@
                 <td>${Name}</td>
                 <td>${Address}</td>
                 <td>
-                    <button class="btn btn-default" onclick="">Modifică</button>
-                </td>
-                <td style="vertical-align: middle;">
-                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
+                      <button class="btn btn-default" onclick="startEdit(${PersonId}); return false;">Modifică</button>
                 </td>
             </tr>
         </script>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            loadGrid();
-
-        });
-
-        function loadGrid() {
-            $.ajax({
-                type: "POST",
-                url: "/Webservices/OwnersService.asmx/ReadAll",
-                data: "{}",
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data) {
-                    var deserializedData = JSON.parse(data.d);
-                    CreateGrid(deserializedData);
-                },
-                failure: function (err, msg) {
-                    alert(err + msg);
-                }
-
-            });
-        }
-        function CreateGrid(deceased) {
-            $('#ownerContainer').find("tr:gt(0)").remove();
-            $('#ownerTemplate').tmpl(deceased).appendTo('#ownerContainer');
-        }
-    </script>
+    <script src="/Scripts/OwnerForm.js"></script>
 
 </asp:Content>
 
