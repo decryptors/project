@@ -1,7 +1,7 @@
 ﻿function FinishAdd() {
     var owner = new Object();
     owner.Name = $("#inputName").val();
-    owner.Religion = $("#inputAddress").val();
+    owner.Address = $("#inputAddress").val();
     var obj = JSON.stringify({ owner: owner });
     $.ajax({
         type: "POST",
@@ -29,8 +29,9 @@ function startEdit(id) {
 
 function finishEdit() {
     var owner = new Object();
-    owner.PersonId = $("#editId").val();
+    owner.PersonID = $("#editId").val();
     owner.Name = $("#editName").val();
+    owner.Address = $("#editAddress").val();
     var obj = JSON.stringify({ owner: owner });
     $.ajax({
         type: "POST",
@@ -74,5 +75,5 @@ function loadGrid() {
 }
 function CreateGrid(owner) {
     $('#ownerContainer').find("tr:gt(0)").remove();
-    $('#ownerTemplate').tmpl(deceased).appendTo('#ownerContainer');
+    $('#ownerTemplate').tmpl(owner).appendTo('#ownerContainer');
 }

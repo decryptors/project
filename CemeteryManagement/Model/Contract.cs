@@ -8,6 +8,7 @@ namespace Model
 {
     public class Contract
     {
+        public int ContractId { get; set; }
         public string InfocetNumber { get; set; }
         public Owner Owner { get; set; }
         public Area Area { get; set; }

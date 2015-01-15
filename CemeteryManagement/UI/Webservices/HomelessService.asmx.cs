@@ -46,6 +46,34 @@ namespace UI.Webservices
             }
         }
 
+        [WebMethod]
+        public string EditHomeless(Homeless homeless)
+        {
+            try
+            {
+                _homelessController.Update(homeless);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
+
+        [WebMethod]
+        public string DeleteHomeless(Homeless homeless)
+        {
+            try
+            {
+                _homelessController.Delete(homeless);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
+
 
     }
 }

@@ -70,5 +70,19 @@ namespace UI.Webservices
                 return exception.Message;
             }
         }
+
+        [WebMethod]
+        public string DeleteArea(Area area)
+        {
+            try
+            {
+                _areaController.Delete(area);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
     }
 }

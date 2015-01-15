@@ -76,3 +76,23 @@ function CreateGrid(deceased) {
     $('#buildingContainer').find("tr:gt(0)").remove();
     $('#buildingTemplate').tmpl(deceased).appendTo('#buildingContainer');
 }
+
+function startDelete(id) {
+    var building = new Object();
+    building.BuildingId = id;
+    var obj = JSON.stringify({ building: building });
+    $.ajax({
+        type: "POST",
+        url: "/Webservices/BuildingService.asmx/DeleteBuilding",
+        data: obj,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            loadGrid();
+        },
+        failure: function (err, msg) {
+            alert(err + msg);
+        }
+
+    });
+}
