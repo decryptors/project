@@ -44,13 +44,16 @@
     <Compile Include="Contract.cs" />
     <Compile Include="ContractWithPerson.cs" />
     <Compile Include="Deceased.cs" />
+    <Compile Include="DeceasedWithArea.cs" />
     <Compile Include="DeceasedWithGrave.cs" />
     <Compile Include="Graveyard.cs" />
     <Compile Include="Homeless.cs" />
+    <Compile Include="HomelessForRegister.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vip.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

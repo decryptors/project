@@ -59,3 +59,15 @@ F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
 F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
+D:\ProiCol\project\CemeteryManagement\UI\bin\UI.dll
+D:\ProiCol\project\CemeteryManagement\UI\bin\UI.pdb
+D:\ProiCol\project\CemeteryManagement\UI\bin\Controller.dll
+D:\ProiCol\project\CemeteryManagement\UI\bin\Model.dll
+D:\ProiCol\project\CemeteryManagement\UI\bin\Repository.dll
+D:\ProiCol\project\CemeteryManagement\UI\bin\Controller.pdb
+D:\ProiCol\project\CemeteryManagement\UI\bin\Model.pdb
+D:\ProiCol\project\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
+D:\ProiCol\project\CemeteryManagement\UI\bin\Repository.pdb
+D:\ProiCol\project\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+D:\ProiCol\project\CemeteryManagement\UI\obj\Debug\UI.dll
+D:\ProiCol\project\CemeteryManagement\UI\obj\Debug\UI.pdb
