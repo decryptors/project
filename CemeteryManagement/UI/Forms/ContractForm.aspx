@@ -42,7 +42,6 @@
 
             </div>
 
-            <button id="btnPopupEdit"  class="btn btn-default">Modifica</button> 
             <p id="titleEditPopup" style="display:none;">Editeaza contractul</p>
             <div id="editDiv" style="display: none">
                 <input type="text" value="Numar infocet"
@@ -72,12 +71,6 @@
                     <th class="categorysort tableheading">Proprietar</th>
                     <th class="levelsort tableheading">Nr. mormânt</th>
                     <th class="levelsort tableheading">Perioadă</th> <%--Data de inceput - Data de sfarsit--%>
-                    <td>
-                        <button class="btn btn-default" onclick="startEdit(${PersonId}); return false;">Modifică</button>
-                    </td>
-                    <td>
-                        <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
-                    </td>
                 </tr>
         </table>
     </div>

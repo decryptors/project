@@ -18,8 +18,6 @@
             <input type="text" name="NrAdev" placeholder="Nr. adeverintei"/>
             
         </div>
-
-
         
         <div class="clear"></div>
         <br />
@@ -31,6 +29,7 @@
                     <th class="tagsort tableheading">Martir/Erou</th>
                     <th class="questiontypesort tableheading">Nr. cert. deces</th>
                     <th class="questiontypesort tableheading">Nr. adeverintei</th>
+                    <th></th>
                 </tr>
         </table>
         <script id="homelessTemplate" type="text/x-jquery-tmpl">
@@ -41,6 +40,12 @@
                 <td>${IsVIP}</td>
                 <td>${BurialCertificateNumber}</td>
                 <td>${RequestNumber}</td>
+                <td>
+                    <button class="btn btn-default" onclick="">Modifică</button>
+                </td>
+                <td style="vertical-align: middle;">
+                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
+                </td>
             </tr>
         </script>
     </div>

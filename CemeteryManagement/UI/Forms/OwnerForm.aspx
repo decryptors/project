@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="/Forms/cemetery-template.Master" Inherits="UI.AreaForm" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,8 +19,6 @@
                 onfocus="onFocus(this)"  />
 
         </div>
-
-        <button id="btnPopupEdit" class="btn btn-default">Modifica</button> 
         <p id="titleEditPopup" style="display:none;">Modifica datele proprietarului</p>
         <div id="editDiv" style="display: none">
             <input type="text" value="Nume"
@@ -38,12 +36,19 @@
                 <tr>
                     <th class="textsort tableheading">Nume</th>
                     <th class="textsort tableheading">Address</th>
+                    <th></th>
                 </tr>
         </table>
         <script id="ownerTemplate" type="text/x-jquery-tmpl">
             <tr>
                 <td>${Name}</td>
                 <td>${Address}</td>
+                <td>
+                    <button class="btn btn-default" onclick="">Modifică</button>
+                </td>
+                <td style="vertical-align: middle;">
+                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
+                </td>
             </tr>
         </script>
     </div>

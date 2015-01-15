@@ -46,7 +46,6 @@
             </div>
         </div>
 
-        <button id="btnPopupEdit" class="btn btn-default">Modifica</button> 
         <p id="titleEditPopup" style="display:none;">Modifica datele mormantului</p>
         <div id="editDiv" style="display: none">
             <select class="form-control">

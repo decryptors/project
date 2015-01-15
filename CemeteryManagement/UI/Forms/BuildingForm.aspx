@@ -42,8 +42,11 @@
             <tr AreaId="${AreaId}" id="row${BuildingId}">                
                 <td>${IsHistorical}</td>
                 <td>${Type}</td>
-                <td>
+                <td style="vertical-align: middle;">
                     <button class="btn btn-default" onclick="startEdit(${BuildingId}); return false;">Modifică</button>
+                </td>
+                <td style="vertical-align: middle;">
+                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
                 </td>
             </tr>
         </script>

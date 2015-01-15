@@ -32,6 +32,7 @@ input, .form-control {
 
  .cautaProprietar, .cautaContract {
      width:100%;
+     margin-bottom:12px;
  }
 
 .btn, .cautaProprietar, .cautaContract {
@@ -44,7 +45,6 @@ input, .form-control {
     font-weight: 400;
     height: 34px;
     align-content:center;
-    margin-bottom:12px;
 }
 
 .ui-corner-all {

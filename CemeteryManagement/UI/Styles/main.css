@@ -308,6 +308,7 @@ body {
     border: 1px solid transparent;
     color: #fff;
     background-color: #5fabf1;
+    margin:0 auto;
 }
 
 .btn-default:hover {
@@ -316,9 +317,11 @@ body {
     color: #5fabf1;
 }
 
-#btnPopup {
-    display: inline-block;
+#btnPopupAdd {
+    margin: 0;
 }
+
+
 /*
     Tables
     */
@@ -349,8 +352,9 @@ input {
 }
 
 .table tr td a.delete {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
+    margin:0 auto;
     vertical-align:middle;
     text-align:center;
     -moz-transition: all 0.1s;
@@ -361,12 +365,12 @@ input {
     position:relative;     
 }
 
-.table tr td a.delete i {
+/*.table tr td a.delete i {
     position:absolute;
     top:50%;
     margin-top:-7px;
     left:50%;
-}
+}*/
 
 .table tr td a.delete:hover {
     color: #f04124 ;
