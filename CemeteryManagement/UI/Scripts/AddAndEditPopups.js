@@ -21,6 +21,8 @@
         $("#dialog").dialog('open');
         if ($("#inputAreaId") != null)
             loadAreaSelect($("#inputAreaId"));
+        if ($("#inputGraveyardId") != null)
+            loadGraveyardSelect($("#inputGraveyardId"));
     });
    
 
@@ -140,4 +142,35 @@ function loadAreaSelect(obj, buildingId) {
         }
 
     });
+}
+
+function loadGraveyardSelect(obj, graveyardId) {
+    $.ajax({
+        type: "POST",
+        url: "/Webservices/AreaService.asmx/ReadAll",
+        data: "{}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            obj.empty();
+            var deserializedData = JSON.parse(data.d);
+            /*
+            for (var i = 0; i < deserializedData.length; i++) {
+                var area = deserializedData[i];
+                var selected = graveyardId == area.graveyardId;
+                obj.append("<option value='" + area.graveyardId + "'" + (selected == true ? " selected " : "") + ">" +
+                    area.Graveyard.Name + "</option>");
+            }*/
+            for (var i = 1; i < 4; i++) {
+                var selected = graveyardId == i;
+                obj.append("<option value='" + i + "'" + (selected == true ? " selected " : "") + ">" +
+                    "Cimitir " + i + "</option>");                
+            }
+        },
+        failure: function (err, msg) {
+            alert(err + msg);
+        }
+
+    });
+
 }
