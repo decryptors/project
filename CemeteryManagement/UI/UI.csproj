@@ -61,6 +61,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fonts\flaticon.css" />
+    <Content Include="Fonts\flaticon.svg" />
     <Content Include="Forms\AreaForm.aspx" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Forms\BuildingForm.aspx" />
@@ -269,6 +271,9 @@
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="packages.config" />
     <Content Include="Forms\LoginTemplate.Master" />
+    <Content Include="Fonts\flaticon.eot" />
+    <Content Include="Fonts\flaticon.ttf" />
+    <Content Include="Fonts\flaticon.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

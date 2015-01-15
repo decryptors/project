@@ -119,6 +119,13 @@ function onFocus(el) {
     }
 }
 
+function deleteRow(btn) {
+    event.preventDefault();
+    event.stopPropagation();
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+
 function CreateEditButtons() {   
 
 }

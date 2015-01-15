@@ -347,3 +347,29 @@ input {
     margin-bottom:20px;
     width: 100%;
 }
+
+.table tr td a.delete {
+    width: 35px;
+    height: 35px;
+    vertical-align:middle;
+    text-align:center;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    display:block;  
+    position:relative;     
+}
+
+.table tr td a.delete i {
+    position:absolute;
+    top:50%;
+    margin-top:-7px;
+    left:50%;
+}
+
+.table tr td a.delete:hover {
+    color: #f04124 ;
+}
+
+

@@ -78,7 +78,10 @@ function loadGrid() {
 
     });
 }
+
 function CreateGrid(deceased) {
     $('#deceasedContainer').find("tr:gt(0)").remove();
     $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
 }
+
+
