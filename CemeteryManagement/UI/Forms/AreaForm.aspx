@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
     <link href="/Styles/grids.css" rel="stylesheet" />
     
-    <h2 class="entity">Areas</h2>
+    <h2 class="entity">Parcele</h2>
     <br />
     <div class="content-wrapper">   
         <button id="btnPopupAdd" class="btn btn-default">Adaugă</button> 

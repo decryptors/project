@@ -85,7 +85,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\BuildingForm.js" />
+    <Content Include="Scripts\ContractForm.js" />
     <Content Include="Scripts\docs.min.js" />
+    <Content Include="Scripts\GraveyardForm.js" />
     <Content Include="Scripts\ie10-viewport-bug-workaround.js" />
     <Content Include="Scripts\DeceasedForm.js" />
     <Content Include="Scripts\AreaForm.js" />
@@ -94,6 +96,7 @@
     <Content Include="Scripts\jquery.tmpl.min.js" />
     <Content Include="Scripts\main-scripts.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\OwnerForm.js" />
     <Content Include="Scripts\script-menu.js" />
     <Content Include="Styles\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap-theme.min.css" />
@@ -108,7 +111,9 @@
     <Content Include="Webservices\AreaService.asmx" />
     <Content Include="Webservices\BuildingService.asmx" />
     <Content Include="Webservices\DeceasedService.asmx" />
+    <Content Include="Webservices\GraveyardService.asmx" />
     <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\LoginService.asmx" />
     <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -258,8 +263,16 @@
       <DependentUpon>DeceasedService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Webservices\GraveyardService.asmx.cs">
+      <DependentUpon>GraveyardService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Webservices\HomelessService.asmx.cs">
       <DependentUpon>HomelessService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\LoginService.asmx.cs">
+      <DependentUpon>LoginService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Webservices\OwnersService.asmx.cs">
