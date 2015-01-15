@@ -61,6 +61,26 @@ function finishEdit() {
     });
 }
 
+function startDelete(id) {
+    var deceased = new Object();
+    deceased.PersonId = id;
+    var obj = JSON.stringify({ deceased: deceased });
+    $.ajax({
+        type: "POST",
+        url: "/Webservices/DeceasedService.asmx/DeleteDeceased",
+        data: obj,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            loadGrid();
+        },
+        failure: function (err, msg) {
+            alert(err + msg);
+        }
+
+    });
+}
+
 function loadGrid() {
     $.ajax({
         type: "POST",

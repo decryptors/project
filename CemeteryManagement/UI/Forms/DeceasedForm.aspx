@@ -55,7 +55,7 @@
                     <button class="btn btn-default" onclick="startEdit(${PersonId}); return false;">Modifică</button>
                 </td>
                 <td style="vertical-align: middle;">
-                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
+                    <a href="#" class="delete" onclick="startDelete(${PersonId}); return false;"><i class="flaticon-close19"></i></a>
                 </td>
             </tr>
         </script>
