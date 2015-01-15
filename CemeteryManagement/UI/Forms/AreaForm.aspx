@@ -45,7 +45,7 @@
                 </tr>
         </table>
         <script id="areaTemplate" type="text/x-jquery-tmpl">
-            <tr id="row${AreaId}">                
+            <tr graveyardId="${Graveyard.GraveyardId}" id="row${AreaId}">                
                 <td>${Number}</td>
                 <td>${Graveyard.Name}</td>
                 <td>${Surface}</td>

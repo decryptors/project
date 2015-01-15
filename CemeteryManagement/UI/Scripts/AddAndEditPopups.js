@@ -150,24 +150,19 @@ function loadAreaSelect(obj, buildingId) {
 function loadGraveyardSelect(obj, graveyardId) {
     $.ajax({
         type: "POST",
-        url: "/Webservices/AreaService.asmx/ReadAll",
+        url: "/Webservices/GraveyardService.asmx/ReadAll",
         data: "{}",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
             obj.empty();
             var deserializedData = JSON.parse(data.d);
-            /*
+            
             for (var i = 0; i < deserializedData.length; i++) {
-                var area = deserializedData[i];
-                var selected = graveyardId == area.graveyardId;
-                obj.append("<option value='" + area.graveyardId + "'" + (selected == true ? " selected " : "") + ">" +
-                    area.Graveyard.Name + "</option>");
-            }*/
-            for (var i = 1; i < 4; i++) {
-                var selected = graveyardId == i;
-                obj.append("<option value='" + i + "'" + (selected == true ? " selected " : "") + ">" +
-                    "Cimitir " + i + "</option>");                
+                var graveyard = deserializedData[i];
+                var selected = graveyardId == graveyard.GraveyardId;
+                obj.append("<option value='" + graveyard.GraveyardId + "'" + (selected == true ? " selected " : "") + ">" +
+                    graveyard.Name + "</option>");
             }
         },
         failure: function (err, msg) {

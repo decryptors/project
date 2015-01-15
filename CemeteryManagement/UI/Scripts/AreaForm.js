@@ -29,11 +29,12 @@ function FinishAdd() {
 
 function startEdit(id) {
     StartEditPopup();
+    var graveyardId = $("#row" + id).attr("graveyardId");
     $("#editId").val(id);
     $("#editNumber").val($("#row" + id + " td:nth-child(1)").html());
     $("#editSurface").val($("#row" + id + " td:nth-child(3)").html());
     //$("#editContractId").val("11");
-    loadGraveyardSelect($("#editGraveyardId"), id);
+    loadGraveyardSelect($("#editGraveyardId"), graveyardId);
     loadContractSelect($("#editContractId"), id);    
 }
 
