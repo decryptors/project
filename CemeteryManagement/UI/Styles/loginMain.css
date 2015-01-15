@@ -18,8 +18,7 @@
 }
 
 .btn-default {
-    display: inline;
-    margin-top: 10px;
+    display: inline;    
 }
 .btn-default:focus {
     display: inline;
