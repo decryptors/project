@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../Styles/PopupsStyle.css"/>
     <link href="/Styles/grids.css" rel="stylesheet" />
     
-    <h2 class="entity">Areas</h2>
+    <h2 class="entity">Parcele</h2>
     <br />
     <div class="content-wrapper">   
         <button id="btnPopupAdd" class="btn btn-default">Adaugă</button> 
@@ -14,7 +14,7 @@
                 <input id="inputNumber" class="form-control" type="text" placeholder="Numărul parcelei"/>
                 Cimitir:<select id="inputGraveyardId" class="GraveyardIdSelect"></select><br />
                 <input id="inputSurface" class="form-control" type="text" placeholder="Suprfață"/>
-                <input id="inputContractId" class="form-control" type="text" placeholder="ContractId" />
+                Contract: <select id="inputContractId" class="form-control" />
                 <p>Alegeti fotografii</p>
                 <input id="inputPhoto" class="form-control" type="file" alt="Adauga fotografii..."/>
             </div>            
@@ -26,7 +26,7 @@
             Număr:<input id="editNumber" class="form-control" type="text" placeholder="Numărul parcelei"/>
             Cimitir:<select id="editGraveyardId" class="GraveyardIdSelect"></select><br />
             Suprafață:<input id="editSurface" class="form-control" type="text" placeholder="Suprfață"/>
-            Contract:<input id="editContractId" class="form-control" type="text" placeholder="ContractId" />
+            Contract:<select id="editContractId" class="form-control" />
             <p>Alegeti fotografii</p>
             <input id="editPhoto" class="form-control" type="file" alt="Adauga fotografii..."/>
         </div>

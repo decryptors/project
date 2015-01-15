@@ -351,6 +351,11 @@ input {
     width: 100%;
 }
 
+#inputPhoto, #editPhoto {
+    border: none;
+    padding: 0;
+}
+
 .table tr td a.delete {
     width: 20px;
     height: 20px;

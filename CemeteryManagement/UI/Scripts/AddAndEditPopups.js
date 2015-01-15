@@ -19,10 +19,13 @@
             resizable: false
         });
         $("#dialog").dialog('open');
+
         if ($("#inputAreaId") != null)
             loadAreaSelect($("#inputAreaId"));
         if ($("#inputGraveyardId") != null)
             loadGraveyardSelect($("#inputGraveyardId"));
+        if ($("#inputContractId") != null)
+            loadContractSelect($("#inputContractId"));
     });
    
 
@@ -172,5 +175,40 @@ function loadGraveyardSelect(obj, graveyardId) {
         }
 
     });
+}
 
+function loadContractSelect(obj, areaId) {
+    for (var i = 1; i < 4; i++) {
+        var selected = areaId == i;
+        obj.append("<option value='" + i + "'" + (selected == true ? " selected " : "") + ">" +
+            "Contract " + i + "</option>");
+    }
+    /*
+    $.ajax({
+        type: "POST",
+        url: "/Webservices/ContractService.asmx/ReadAll",
+        data: "{}",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+            obj.empty();
+            var deserializedData = JSON.parse(data.d);            
+            for (var i = 0; i < deserializedData.length; i++) {
+                var contract = deserializedData[i];
+                var selected = contractId == contract.contractId;
+                obj.append("<option value='" + area.graveyardId + "'" + (selected == true ? " selected " : "") + ">" +
+                    area.Graveyard.Name + "</option>");
+            }
+            for (var i = 1; i < 4; i++) {
+                var selected = areaId == i;
+                obj.append("<option value='" + i + "'" + (selected == true ? " selected " : "") + ">" +
+                    "Contract " + i + "</option>");
+            }
+        },
+        failure: function (err, msg) {
+            alert(err + msg);
+        }
+
+    });
+    */
 }
