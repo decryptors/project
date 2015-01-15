@@ -31,6 +31,11 @@ namespace Controller
             return ReportsRepository.ReadAllDeceasedWithArea();
         }
 
+        public List<Vip> ReadAllRegC()
+        {
+            return ReportsRepository.ReadAllVips();
+        }
+
 
     }
 }

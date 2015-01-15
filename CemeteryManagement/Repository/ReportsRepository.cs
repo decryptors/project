@@ -13,6 +13,7 @@ namespace Repository
         private const string READ_ALL_CONTRACTS_WITH_PERSONS = "ReadAllContractsWithPersons";
         private const string READ_ALL_HOMELESS = "Persons_ReadAllHomeless";
         private const string READ_ALL_DECEASED_WITH_AREA = "ReadAllDeadWithAreas";
+        private const string READ_VIPS = "ReadAllVips";
 
 
         public List<ContractWithPerson> ReadAllContracts()
@@ -31,7 +32,25 @@ namespace Repository
 
             return DBManager.ExecuteReadCommand<DeceasedWithArea>(READ_ALL_DECEASED_WITH_AREA, ReaderToModelRegD);
         }
+        public List<Vip> ReadAllVips()
+        {
+            return DBManager.ExecuteReadCommand<Vip>(READ_VIPS, ReaderToModelRegC);
+        }
 
+        private Vip ReaderToModelRegC(SqlDataReader reader)
+        {
+            return new Vip
+            {
+                DeceasedName = reader.GetString(reader.GetOrdinal("d.Name")),
+                DoB = reader.GetDateTime(reader.GetOrdinal("d.DateOfBurial")),
+                AreaNumber = reader.GetInt32(reader.GetOrdinal("Number")),
+                Surface = reader.GetInt32(reader.GetOrdinal("Surface")),
+                InvoiceNo = reader.GetInt32(reader.GetOrdinal("InvoiceNo")),
+                ConcesName = reader.GetString(reader.GetOrdinal("p.Name")),
+                ConcesAdr = reader.GetString(reader.GetOrdinal("p.Address"))
+
+            };
+        }
 
 
         private HomelessForRegister ReaderToModelRegE(SqlDataReader reader)
