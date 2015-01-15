@@ -7,19 +7,6 @@ D:\proiectColectiv\CemeteryManagement\UI\bin\Model.pdb
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
 D:\proiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
-F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.dll.config
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.dll
 \\psf\Home\Developer\decryptors\project\CemeteryManagement\UI\bin\UI.pdb
@@ -59,3 +46,16 @@ E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\bin\Repo
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\obj\Debug\UI.dll
 E:\cursuri & stuff\sem5\proiect colectiv\project1\CemeteryManagement\UI\obj\Debug\UI.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\UI.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Controller.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Model.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Newtonsoft.Json.xml
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\bin\Repository.pdb
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.dll
+F:\anul3\ProiectColectiv\CemeteryManagement\UI\obj\Debug\UI.pdb

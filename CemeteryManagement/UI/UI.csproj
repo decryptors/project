@@ -107,8 +107,10 @@
     </Content>
     <Content Include="Webservices\AreaService.asmx" />
     <Content Include="Webservices\BuildingService.asmx" />
+    <Content Include="Webservices\ContractService.asmx" />
     <Content Include="Webservices\DeceasedService.asmx" />
     <Content Include="Webservices\HomelessService.asmx" />
+    <Content Include="Webservices\LoginService.asmx" />
     <Content Include="Webservices\OwnersService.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -254,12 +256,20 @@
       <DependentUpon>BuildingService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Webservices\ContractService.asmx.cs">
+      <DependentUpon>ContractService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Webservices\DeceasedService.asmx.cs">
       <DependentUpon>DeceasedService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Webservices\HomelessService.asmx.cs">
       <DependentUpon>HomelessService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webservices\LoginService.asmx.cs">
+      <DependentUpon>LoginService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Webservices\OwnersService.asmx.cs">
