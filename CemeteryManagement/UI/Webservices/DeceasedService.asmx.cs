@@ -60,6 +60,19 @@ namespace UI.Webservices
             }
         }
         [WebMethod]
+        public string DeleteDeceased(Deceased deceased) 
+        {
+            try
+            {
+                _deceasedController.Delete(deceased);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
+        [WebMethod]
         public string ReadDeceasedById(int personId)
         {
             try
