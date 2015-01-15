@@ -60,6 +60,20 @@ namespace UI.Webservices
             }
         }
 
+        [WebMethod]
+        public string DeleteHomeless(Homeless homeless)
+        {
+            try
+            {
+                _homelessController.Delete(homeless);
+                return "true";
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
+
 
     }
 }

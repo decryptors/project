@@ -19,7 +19,7 @@
         </div>
         <p id="titleEditPopup" style="display:none;">Modifică clădire</p>
         <div id="editDiv" style="display: none">
-            <input id="editType" type="text" name="editType" placeholder="Tipul clădirii" /><br />
+            Tip clădire:<input id="editType" type="text" name="editType" placeholder="Tipul clădirii" /><br />
             Parcelă:<select id="editAreaId" class="AreaIdSelect"></select><br />      
             Clădire istorică <input id="editIsHistorical" type="checkbox" name="IsHistorical"/><br />
         </div>
@@ -46,7 +46,7 @@
                     <button class="btn btn-default" onclick="startEdit(${BuildingId}); return false;">Modifică</button>
                 </td>
                 <td style="vertical-align: middle;">
-                    <a href="#" class="delete" onclick="deleteRow(this)"><i class="flaticon-close19"></i></a>
+                    <a href="#" class="delete" onclick="startDelete(${BuildingId}); return false;"><i class="flaticon-close19"></i></a>
                 </td>
             </tr>
         </script>

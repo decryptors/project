@@ -20,12 +20,12 @@
         <p id="titleEditPopup" style="display:none;">Modifică decedat</p>
         <div id="editDiv" style="display: none">
             <input id="editId" type="hidden" />
-            <input id="editName" type="text" name="Name" placeholder="Nume" /><br />
-            <input id="editReligion" type="text" name="Religion" placeholder="Religie" /><br />
-            <input id="editDateOfBurial" type="text" class="datepicker" name="DateOfBurial" placeholder="Data înhumării" /><br />
-            Martir/Erou: <input id="editImportant" type="checkbox" name="IsVIP"/><br />
-            <input id="editBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" /><br />
-            <input id="editRequestNumber" type="text" name="NrAdev" placeholder="Nr. adeverintei"/>            
+            Nume:<input id="editName" type="text" name="Name" placeholder="Nume" />
+            Religie:<input id="editReligion" type="text" name="Religion" placeholder="Religie" />
+            Data Înhumării:<input id="editDateOfBurial" type="text" class="datepicker" name="DateOfBurial" placeholder="Data înhumării" />
+            Martir/Erou: <input id="editImportant" type="checkbox" name="IsVIP"/>
+            Nr. cert. de înhumare:<input id="editBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" />
+            Nr. adeverintei:<input id="editRequestNumber" type="text" name="NrAdev" placeholder="Nr. adeverintei"/>            
         </div>
         
         <div class="clear"></div>
@@ -53,7 +53,7 @@
                     <button class="btn btn-default" onclick="startEdit(${PersonId}); return false;">Modifică</button>
                 </td>
                 <td style="vertical-align: middle;">
-                    <a href="#" class="delete" onclick="deleteRow(this); return false;"><i class="flaticon-close19"></i></a>
+                    <a href="#" class="delete" onclick="startDelete(${PersonId}); return false;"><i class="flaticon-close19"></i></a>
                 </td>
             </tr>
         </script>

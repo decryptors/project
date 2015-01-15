@@ -26,8 +26,7 @@ function FinishAdd() {
     });
 }
 
-function startEdit(id) {
-    event.preventDefault()    
+function startEdit(id) {    
     StartEditPopup();
     $("#editId").val(id);
     $("#editName").val($("#row" + id + " td:nth-child(1)").html());
