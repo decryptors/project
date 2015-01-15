@@ -4,11 +4,11 @@ function FinishAdd() {
     var building = new Object();    
     var areaId = parseInt($("#inputAreaId").val());
     building.Type = $("#inputType").val();
-    building.IsHistorical = $("#inputIsHistorical").prop('checked');
+    building.IsHistorical = $("#inputIsHistorical").prop('checked');    
     var obj = JSON.stringify({ building: building, areaId: areaId });
     $.ajax({
         type: "POST",
-        url: "/Webservices/BuildingService.asmx?op=AddBuilding",
+        url: "/Webservices/BuildingService.asmx/AddBuilding",
         data: obj,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
@@ -27,8 +27,8 @@ function startEdit(id) {
     StartEditPopup();
     $("#editId").val(id);    
     $("#editIsHistorical").prop("checked", $("#row" + id + " td:nth-child(1)").html() == "true");
-    $("#editType").val($("#row" + id + " td:nth-child(2)").html());
-    $("#editAreaId").val($("#row" + id + " td:nth-child(3)").html());
+    $("#editType").val($("#row" + id + " td:nth-child(2)").html());    
+    loadAreaSelect($("#editAreaId"), id);
 }
 
 function finishEdit() {
@@ -40,7 +40,7 @@ function finishEdit() {
     var obj = JSON.stringify({ building: building, areaId: areaId });    
     $.ajax({
         type: "POST",
-        url: "/Webservices/BuildingService.asmx?op=EditBuilding",
+        url: "/Webservices/BuildingService.asmx/EditBuilding",
         data: obj,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
@@ -73,6 +73,6 @@ function loadGrid() {
     });
 }
 function CreateGrid(deceased) {
-    $('#deceasedContainer').find("tr:gt(0)").remove();
-    $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
+    $('#buildingContainer').find("tr:gt(0)").remove();
+    $('#buildingTemplate').tmpl(deceased).appendTo('#buildingContainer');
 }

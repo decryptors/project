@@ -10,7 +10,7 @@
           <script>
           </script>
 
-         <button id="btnPopupAdd">Adauga</button> 
+         <button id="btnPopupAdd" class="btn btn-default">Adauga</button> 
             <p id="titleAddPopup" style="display:none;">Adauga contract</p>
             <div id="addDiv" style="display: none">
                 <input type="text" value="Numar infocet"
@@ -42,7 +42,7 @@
 
             </div>
 
-            <button id="btnPopupEdit">Modifica</button> 
+            <button id="btnPopupEdit"  class="btn btn-default">Modifica</button> 
             <p id="titleEditPopup" style="display:none;">Editeaza contractul</p>
             <div id="editDiv" style="display: none">
                 <input type="text" value="Numar infocet"
