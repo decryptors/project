@@ -28,11 +28,6 @@ namespace UI.Webservices
             return JsonConvert.SerializeObject(_deceasedController.ReadAll(), Formatting.None, new JsonSerializerSettings());
         }
 
-        [WebMethod]
-        public string ReadDeceasedWithAreaId(DateTime date)
-        {
-            return JsonConvert.SerializeObject(_deceasedController.ReadDeceasedWithAreaId(date), Formatting.None, new JsonSerializerSettings());
-        }
 
         [WebMethod]
         public string AddDeceased(Deceased deceased)

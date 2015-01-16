@@ -12,5 +12,6 @@ namespace Model
         public DateTime DateOfBurial { get; set; }
         public string BurialCertificateNumber { get; set; }
         public bool IsVIP { get; set; }
+        public int AreaId { get; set; }
     }
 }

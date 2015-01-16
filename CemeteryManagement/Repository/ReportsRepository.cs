@@ -41,13 +41,13 @@ namespace Repository
         {
             return new Vip
             {
-                DeceasedName = reader.GetString(reader.GetOrdinal("d.Name")),
-                DoB = reader.GetDateTime(reader.GetOrdinal("d.DateOfBurial")),
+                DeceasedName = reader.GetString(0),
+                DoB = reader.GetDateTime(1),
                 AreaNumber = reader.GetInt32(reader.GetOrdinal("Number")),
                 Surface = reader.GetInt32(reader.GetOrdinal("Surface")),
                 InvoiceNo = reader.GetInt32(reader.GetOrdinal("InvoiceNo")),
-                ConcesName = reader.GetString(reader.GetOrdinal("p.Name")),
-                ConcesAdr = reader.GetString(reader.GetOrdinal("p.Address"))
+                ConcesName = reader.GetString(5),
+                ConcesAdr = reader.GetString(6)
 
             };
         }
@@ -70,7 +70,7 @@ namespace Repository
             return new ContractWithPerson
             {
                 ContractId = reader.GetInt32(reader.GetOrdinal("ContractId")),
-                StartDate = reader.GetDateTime(reader.GetOrdinal("DateTime")),
+                StartDate = reader.GetDateTime(reader.GetOrdinal("StartDate")),
                 Number = reader.GetInt32(reader.GetOrdinal("InvoiceNo")),
                 Name = reader.GetString(reader.GetOrdinal("Name")),
                 Address = reader.GetString(reader.GetOrdinal("Address"))
@@ -82,9 +82,9 @@ namespace Repository
         {
             return new DeceasedWithArea
             {
-                Name = reader.GetString(reader.GetOrdinal("Persons.Name")),
-                CemeteryName = reader.GetString(reader.GetOrdinal("Graveyards.Name")),
-                AreaNumber = reader.GetInt32(reader.GetOrdinal("Areas.Number"))
+                Name = reader.GetString(0),
+                CemeteryName = reader.GetString(1),
+                AreaNumber = reader.GetInt32(2)
             };
         }
 

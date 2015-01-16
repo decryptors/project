@@ -19,5 +19,42 @@
         </table>
        
     </div>
+     <script id="deceasedTemplate" type="text/x-jquery-tmpl">
+            <tr>
+                <td>${BurialCertificateNumber}</td>
+                <td>${RequestNumber}</td>
+                <td>${Map}</td>
+            </tr>
+      </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            loadGrid();
+
+        });
+
+        function loadGrid() {
+            $.ajax({
+                type: "POST",
+                url: "/Webservices/ReportsService.asmx/ReadAllRegE",
+                data: "{}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    var deserializedData = JSON.parse(data.d);
+                    CreateGrid(deserializedData);
+                },
+                failure: function (err, msg) {
+                    alert(err + msg);
+                }
+
+            });
+        }
+        function CreateGrid(deceased) {
+            $('#deceasedContainer').find("tr:gt(0)").remove();
+            $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
+        }
+
+    </script>
 
 </asp:Content>
