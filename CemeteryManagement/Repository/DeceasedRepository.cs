@@ -33,6 +33,7 @@ namespace Repository
         public void AddDeceased(Deceased deceased) {
             SqlParameter[] deceasedParam = {
                 new SqlParameter("@Name", SqlDbType.NVarChar, -1) { Value = deceased.Name },
+                 new SqlParameter("@AreaId", SqlDbType.Int) { Value = deceased.AreaId },
                 new SqlParameter("@Religion", SqlDbType.NVarChar, -1) { Value = deceased.Religion },
                 new SqlParameter("@DateOfBurial", SqlDbType.Date) { Value = deceased.DateOfBurial },
                 new SqlParameter("@isVip", SqlDbType.Bit) { Value = deceased.IsVIP },
@@ -49,9 +50,11 @@ namespace Repository
             DBManager.ExecuteCommand(DELETE_DECEASED, deceasedParam);
         }
 
-        public void UpdateDeceased(Deceased deceased) {
+        public void UpdateDeceased(Deceased deceased)
+        {
             SqlParameter[] deceasedParam = {
                 new SqlParameter("@Name", SqlDbType.NVarChar, -1) { Value = deceased.Name },
+                new SqlParameter("@AreaId", SqlDbType.Int) { Value = deceased.AreaId },
                 new SqlParameter("@Religion", SqlDbType.NVarChar, -1) { Value = deceased.Religion },
                 new SqlParameter("@DateOfBurial", SqlDbType.Date) { Value = deceased.DateOfBurial },
                 new SqlParameter("@isVip", SqlDbType.Bit) { Value = deceased.IsVIP },
@@ -61,33 +64,13 @@ namespace Repository
             DBManager.ExecuteCommand(UPDATE_DECEASED, deceasedParam);
         }
 
-        public List<DeceasedWithGrave> ReadDeceasedWithAreaId(DateTime date) {
-            SqlParameter[] deceasedParam = {
-                new SqlParameter("@date", SqlDbType.Date) { Value = date.Date }
-            };
-            return DBManager.ExecuteReadCommand<DeceasedWithGrave>(READ_DECEASED_BY_YEAR, ReaderToModelForDeceasedWithGrave, deceasedParam);
-        }
-
-        protected DeceasedWithGrave ReaderToModelForDeceasedWithGrave(SqlDataReader reader)
-        {
-
-            return new DeceasedWithGrave
-            {
-                PersonId = reader.GetInt32(reader.GetOrdinal("PersonId")),
-                Name = reader.GetString(reader.GetOrdinal("Name")),
-                Religion = reader.GetString(reader.GetOrdinal("Religion")),
-                DateOfBurial = reader.GetDateTime(reader.GetOrdinal("DateOfBurial")),
-                AreaId = reader.GetInt32(reader.GetOrdinal("AreaId"))
-            };
-        } 
-        
-
         protected  Deceased ReaderToModel(SqlDataReader reader)
         {
 
             return new Deceased
             {
                 PersonId = reader.GetInt32(reader.GetOrdinal("PersonId")),
+                AreaId = reader.GetInt32(reader.GetOrdinal("AreaId")),
                 Name = reader.GetString(reader.GetOrdinal("Name")),
                 Religion = reader.GetString(reader.GetOrdinal("Religion")),
                 DateOfBurial = reader.GetDateTime(reader.GetOrdinal("DateOfBurial")),

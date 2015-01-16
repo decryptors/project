@@ -16,22 +16,21 @@
                     <th class="categorysort tableheading">Nr. eliberării contractului</th>
                     <th class="categorysort tableheading">Data eliberării contractului</th>
                     <th class="categorysort tableheading">Nume</th>
-                    <th class="categorysort tableheading">Prenume</th>
                     <th class="categorysort tableheading">Adresă</th>
                 </tr>
         </table>
        
       </div> 
-      <%--<script id="deceasedTemplate" type="text/x-jquery-tmpl">
+      <script id="deceasedTemplate" type="text/x-jquery-tmpl">
             <tr>
+                <td>${ContractId}</td>
+                <td>${Number}</td>
+                <td>${StartDate}</td>
                 <td>${Name}</td>
-                <td>${Religion}</td>
-                <td>${DateOfBurial}</td>
-                <td>${IsVIP}</td>
-                <td>${BurialCertificateNumber}</td>
+                <td>${Address}</td>
             </tr>
-        </script>
-    </div>
+      </script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             loadGrid();
@@ -41,7 +40,7 @@
         function loadGrid() {
             $.ajax({
                 type: "POST",
-                url: "/Webservices/DeceasedService.asmx/ReadAll",
+                url: "/Webservices/ReportsService.asmx/ReadAllRegG",
                 data: "{}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -60,6 +59,6 @@
             $('#deceasedTemplate').tmpl(deceased).appendTo('#deceasedContainer');
         }
         
-    </script>--%>
+    </script>
 
 </asp:Content>

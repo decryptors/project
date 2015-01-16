@@ -14,6 +14,7 @@
             <input id="inputName" type="text" name="Name" placeholder="Nume" /><br />
             <input id="inputReligion" type="text" name="Religion" placeholder="Religie" /><br />
             <input id="inputDateOfBurial" type="text" class="datepicker" name="DateOfBurial" placeholder="Data înhumării" /><br />
+            Parcelă:<select id="inputAreaId" class="AreaIdSelect"></select><br />
             Martir/Erou: <input id="checkImportant" type="checkbox" name="IsVIP"/><br />
             <input id="inputBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" /><br />
         </div>
@@ -23,6 +24,7 @@
             Nume:<input id="editName" type="text" name="Name" placeholder="Nume" /><br />
             Religie:<input id="editReligion" type="text" name="Religion" placeholder="Religie" /><br />
             Data înhumării:<input id="editDateOfBurial" type="text" class="datepicker" name="DateOfBurial" placeholder="Data înhumării" /><br />
+            Parcelă:<select id="editAreaId" class="AreaIdSelect"></select><br />
             Martir/Erou: <input id="editImportant" type="checkbox" name="IsVIP"/><br />
             Nr. cert. de înhumare:<input id="editBurialCertificateNumber" type="text" name="BurialCertificateNumber" placeholder="Nr. cert. de înhumare" /><br />
         </div>
@@ -52,7 +54,7 @@
                 <td>${IsVIP}</td>
                 <td>${BurialCertificateNumber}</td>
                 <td style="vertical-align: middle;">
-                    <button class="btn btn-default" onclick="startEdit(${PersonId}); return false;">Modifică</button>
+                    <button class="btn btn-default" onclick="startEdit(${PersonId},${AreaId}); return false;">Modifică</button>
                 </td>
                 <td style="vertical-align: middle;">
                     <a href="#" class="delete" onclick="startDelete(${PersonId}); return false;"><i class="flaticon-close19"></i></a>

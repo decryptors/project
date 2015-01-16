@@ -35,8 +35,5 @@ namespace Controller
             DeceasedRepository.DeleteDeceased(deceased);
         }
 
-        public List<DeceasedWithGrave> ReadDeceasedWithAreaId(DateTime date) {
-            return DeceasedRepository.ReadDeceasedWithAreaId(date);
-        }
     }
 }
