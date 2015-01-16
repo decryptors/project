@@ -55,7 +55,7 @@
                      <ul class="nav nav-sidebar">
                         <li role="presentation" class="has-sub">
                             <a class="registrii-toggle" href="#" role="button">
-                                    Regiștrii 
+                                    Regiștri
                             </a>
                             <ul class="nav hide-menu" role="menu">
                                 <li class="active"><a href="RegistrulAnualDeProgramareAInmormantarilor.aspx">Anual de programare a înmormântărilor</a></li>
