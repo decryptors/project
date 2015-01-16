@@ -22,8 +22,8 @@
      <script id="deceasedTemplate" type="text/x-jquery-tmpl">
             <tr>
                 <td>${Name}</td>
-                <td>${AreaNumber}</td>
                 <td>${CemeteryName}</td>
+                <td>${AreaNumber}</td>
             </tr>
       </script>
 
